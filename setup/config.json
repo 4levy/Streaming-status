@@ -1,183 +1,54 @@
 {
   "setup": {
-    "city": "mai sai",
-    "delay": 10
+    "city": "bangkok",
+    "delay": 2.5
   },
   "config": {
     "options": {
-      "watch-url": ["https://www.youtube.com/watch?v=8k6C_3Q4S1o"],
-      "timestamp": "{end:1719680400}"
+      "watch-url": ["https://www.youtube.com/watch?v=IOtVtP0RAjM&list=RDIOtVtP0RAjM&start_radio=1"],
+      "timestamp": "{end:1735664400}"
     },
-    "text-1": [
-      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕚 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕙 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕘 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕗 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕖 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕕 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕔ื 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕓 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕒 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕑 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕐 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}"
-    ],
+    "text-1": ["{NF4({hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{en=year:2})}"],
     "text-2": [
-      "{NF4(【 1 / 16 】)} 👥 Username : 🗂️ {user:name} ",
-      "{NF4(【 2 / 16 】)} 📄 Patch Steaming Rpc : 📄 {NF4({patch})} ",
-      "{NF4(【 3 / 16 】)} 📈 Uptime : {NF4({uptime})}",
-      "{NF4(【 4 / 16 】)} 📈 Cpu name : {NF4({cpu:name})} ",
-      "{NF4(【 5 / 16 】)} 📈 Cpu core : {NF4({cpu:cores})} ",
-      "{NF4(【 6 / 16 】)} 📈 {NF4({cpu:usage})} / 📈 {NF4({cpu:speed})} / 📈 {NF4({ram:usage})}",
-      "{NF4(【 7 / 16 】)} 📶 Ping Server : 📶 {NF4({ping})} ",
-      "{NF4(【 8 / 16 】)} 🌉 Country : {country} ",
-      "{NF4(【 9 / 16 】)} 🏞️ Temp in {city} : 🌡️ {NF4({temp:c})}  /  🌡️ {NF4({temp:f})} ",
-      "{NF4(【 10 / 16 】)} 🍃 Wind in {city} : 🍃 {NF4({wind:kph})} / 🍃 {NF4({wind:mph})} ",
-      "{NF4(【 11 / 16 】)} 🍃 Gust of wind in {city} : 🍃 {NF4({gust:kph})}  / 🍃 {NF4({gust:mph})} ",
-      "{NF4(【 12 / 16 】)} ☁️ Cloud in {city} : ☁️ {NF4({cloud})} ",
-      "{NF4(【 13 / 16 】)} 🌞 UV in {city} : 🌞 {uv}",
-      "{NF4(【 14 / 16 】)} 🦠 Pm 2.5 in {city} : 🦠 {NF4({pm2.5})}",
-      "{NF4(【 15 / 16 】)} 💧 Humidity in {city} : 💧 {NF4({humidity})}",
-      "{NF4(【 16 / 16 】)} 🌌 Visibility in {city} : 🌌 {NF4({vis:km})} / 🌌 {NF4({vis:mi})}"
+      "{NF4(〈1/10〉)} ⌥ ᴀɪɴᴢ ᴏᴏᴀʟ ɢᴏᴡɴ",
+      "{NF4(〈2/10〉)} ⌥ ᴀʟʙᴇᴅᴏ",
+      "{NF4(〈3/10〉)} ⌥ ꜱʜᴀʟʟᴛᴇᴀʀ",
+      "{NF4(〈4/10〉)} ⌥ ᴅᴇᴍɪᴜʀɢᴇ",
+      "{NF4(〈5/10〉)} ⌥ ᴀᴜʀᴀ ʙᴇʟʟᴀ",
+      "{NF4(〈6/10〉)} ⌥ ᴍᴀʀᴇ ʙᴇʟʟᴏ",
+      "{NF4(〈7/10〉)} ⌥ ɴᴀʀʙᴇʀᴀʟ",
+      "{NF4(〈8/10〉)} ⌥ ꜱᴇʙᴀꜱ ᴛɪᴀɴ",
+      "{NF4(〈9/10〉)} ⌥ ᴇɴᴛᴏᴍᴀ ᴠᴀꜱɪʟɪꜱꜱᴀ",
+      "{NF4(〈10/10〉)} ⌥ ᴄᴏᴄʏᴛᴜꜱ"
     ],
     "text-3": [
-      "𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙿𝙸𝚇𝙴𝙻𝙰 𝙿𝚁𝙾𝙹𝙴𝙲𝚃",
-      "{NF4(【 1 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙶𝙴𝙽 1 | Princess zelina 💙",
-      "{NF4(【 2 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙳𝚁𝙰𝙺𝙸 𝙺𝙾𝙽𝙰 ❤️",
-      "{NF4(【 3 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙺𝙸𝚃𝚂𝚄𝙽𝙴𝙺𝙾 𝙼𝙴𝚆𝚃𝙴𝙽 💜",
-      "{NF4(【 4 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙹𝙾𝙻𝙻𝚈 𝙴𝚂𝚃𝙰𝙰 💙",
-      "{NF4(【 5 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙺𝙰𝙼𝙸𝚈𝚄 𝚁𝙴𝙸𝚁𝙸𝙽 🤍",
-      "{NF4(【 6 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙷𝙰𝙽𝙰𝙱𝙸 𝙻𝙰𝙵𝚈 💜",
-      "{NF4(【 7 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙸𝚂𝙴𝙺𝙰𝙸 | 𝙰𝚁𝙰𝙽𝙸𝚂 𝙴𝙻𝚅𝙴𝙽𝙴 💚",
-      "{NF4(【 8 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙻𝙴𝙶𝙴𝙽𝙳 | 𝚂𝚄𝙿𝙴𝚁𝙿𝚁𝙴𝚃𝚃𝚈 𝚃𝙰𝙺𝙾𝙿𝙴𝚁𝙾 💙",
-      "{NF4(【 9 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙻𝙴𝙶𝙴𝙽𝙳 | 𝙰𝙺𝙴𝙼𝙸 𝙰𝚁𝙻𝙸𝙽 ❤️",
-      "{NF4(【 10 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙻𝙴𝙶𝙴𝙽𝙳 | 𝙽𝙴𝚉𝚄𝙼𝙸 𝙴𝙻𝚂𝙴 💙",
-      "{NF4(【 11 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙻𝙴𝙶𝙴𝙽𝙳 | 𝚄𝙼𝙸𝙽𝙾 𝙲𝙸𝙰𝙻𝙰 💙",
-      "{NF4(【 12 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙼𝚈𝙲𝙰𝚁𝙰 𝙼𝙴𝙻𝙾𝙽𝚈 💚",
-      "{NF4(【 13 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙲𝙴𝚁𝙰𝙵𝙸𝙽𝙴 𝙼𝙸𝙺𝙰𝙴𝙻 🤍",
-      "{NF4(【 14 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙰𝚃𝙻𝙰𝙽𝚃𝙴𝙸𝙰 𝚂𝙸𝚁𝙴𝙴𝙽 💙",
-      "{NF4(【 15 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙰𝙻𝙳𝙰𝙻𝙸𝚃𝙰 𝙻𝙸𝙻𝙸𝙱𝙴𝙻𝙻𝙴 ❤️",
-      "{NF4([ 16 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙺𝙴𝚁𝙴𝚂𝚂𝙰 𝚉𝙾𝚄𝙻𝙵𝙸𝙰 💙",
-      "{NF4(【 17 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙼𝚈𝚂𝚃𝙸𝙲 | 𝙽𝙾𝙲𝚃𝚄𝚁𝙽𝙰𝚉 𝙽𝙰𝙰𝚁 💜",
-      "{NF4(【 18 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙳𝙴𝚂𝚃𝙸𝙽𝚈 | 𝙱𝙸𝚂𝙲𝚄𝙸𝚃 𝙱𝙻𝚈𝚃𝙷𝙴 💛",
-      "{NF4(【 19 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙳𝙴𝚂𝚃𝙸𝙽𝚈 | 𝙶𝚁𝙸𝙼𝚄𝚂 𝙶𝚁𝙸𝙼𝙼 🖤",
-      "{NF4(【 20 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙳𝙴𝚂𝚃𝙸𝙽𝚈 | 𝙰𝚁𝚄𝙽𝙰 𝚂𝙷𝚄𝚄𝙽 💙",
-      "{NF4(【 21 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙳𝙴𝚂𝚃𝙸𝙽𝚈 | 𝙴𝚄𝚃𝙷𝙰𝙻𝙸𝙰 𝚉𝙴𝙿𝙷𝚈𝚁 💙",
-      "{NF4(【 22 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝙳𝙴𝚂𝚃𝙸𝙽𝚈 | 𝙳𝙰𝚁𝙸𝙰𝚂 𝚂𝙸𝙻𝚅𝙰𝙷 🤍",
-      "{NF4(【 23 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝚂 (Solo) | 𝚁𝙾𝚂𝙴𝙻𝙸𝙰 𝙳𝙴 𝙼𝙰𝙶𝙴𝙽𝚃𝙸𝙰 ❤️",
-      "{NF4(【 24 / 24 】)}  𝙿𝙸𝚇𝙴𝙻𝙰 𝚂 (Solo) | 𝚂𝙸𝚂𝙸𝚁𝙰 𝙷𝚈𝙳𝚁𝙴𝙽𝙶𝙴𝙰 💜"
+      "{NF4(🌏 {city} | ☀️ {uv})}",
+      "{NF4(🌡️ {temp:c} | 🍃 {wind:kph})}",
+      "{NF4(💧 {humidity} | ☁ {cloud})}"
     ],
     "bigimg": [
-      "mp:attachments/1209369508905488414/1209373581163630592/pixela-otm.gif?ex=65e6afea&is=65d43aea&hm=a35b99fac795bc52ee6d816376d0d7dbaf70bce35c79d3a069fb81e4eccb63e4&",
-      "mp:attachments/1209369508905488414/1209373607206191135/zelina-otm.gif?ex=65e6aff1&is=65d43af1&hm=840056b79548104a94cd9b93242cfd5cbde1e0b47f4ac0d0828b1f159d0162ae&",
-      "mp:attachments/1209369508905488414/1209374451670454382/kona-otm.gif?ex=65e6b0ba&is=65d43bba&hm=39bffdc2a96c476f9267c6b966b6665bc0f9aa1982b51b76b061824519b090b0&",
-      "mp:attachments/1209369508905488414/1209375535864615003/mewten-otm.gif?ex=65e6b1bc&is=65d43cbc&hm=454ba670ed5d69da07eacab1a5de3688055c9803e747080163fdbbdbb9daaedb&",
-      "mp:attachments/1209369508905488414/1209378271792463972/estaa-otm.gif?ex=65e6b449&is=65d43f49&hm=904e1808ac1193ae88dd3790fbcde7f58095806c0da9bb2c7d2581a02dddef62&",
-      "mp:attachments/1209369508905488414/1209385088136126544/reirin-otm.gif?ex=65e6baa2&is=65d445a2&hm=7ad567647ed0a3ffc093560d136e321fab5eca61956f00d5d9ad27930cf68939&",
-      "mp:attachments/1209369508905488414/1209387379849306232/lafy-otm.gif?ex=65e6bcc4&is=65d447c4&hm=cc8564fcc6bc17c3143ad6a22e3c06efa1b2b9d5d3a6475ae0eda4088da38f9b&",
-      "mp:attachments/1209369508905488414/1209388187701608528/elvene-otm.gif?ex=65e6bd85&is=65d44885&hm=5e479014b2674b98a28851f03d251d15ef9cffe05b8be256c76794447f097515&",
-      "mp:attachments/1209369508905488414/1209389028235812905/takopero-otm.gif?ex=65e6be4d&is=65d4494d&hm=0c162ddeff709da492e04c5620893b2b3fa08ca2e85f4b659ad0c2465245d535&",
-      "mp:attachments/1209369508905488414/1209389731310346240/arlin-otm.gif?ex=65e6bef5&is=65d449f5&hm=eb15075b81ecb48b3bebaf95f4a6520b5a1a6fc8d0394430a641b8de70e2723a&",
-      "mp:attachments/1209369508905488414/1209390358513975336/elze-otm.gif?ex=65e6bf8a&is=65d44a8a&hm=2dbba74937c214a59469e96881925961f5d304db7e97b51f2def639d8b77ac77&",
-      "mp:attachments/1209369508905488414/1209391111001608202/ciala-otm.gif?ex=65e6c03e&is=65d44b3e&hm=e49d92125d5abcc5ca8da1bb359e07b0d0f1a5a1474e829f1d1b17ef9faf8a67&",
-      "mp:attachments/1209369508905488414/1209391933265285190/melony-otm.gif?ex=65e6c102&is=65d44c02&hm=e3022f51eec8872ca5ad767509371de03f087422359ba95aa89aa6a7f8bcf386&",
-      "mp:attachments/1209369508905488414/1209392630895616062/mikael-otm.gif?ex=65e6c1a8&is=65d44ca8&hm=9adf7d51126f022d94aa446cf3bc2539e200529007df6a591a7904d0f3139d13&",
-      "mp:attachments/1209369508905488414/1209393189723709461/sireen-otm.gif?ex=65e6c22d&is=65d44d2d&hm=56b5a2c0437153b371a04ab535d70b2752e8e3b47a5c378236c6ec732ad09575&",
-      "mp:attachments/1209369508905488414/1209394188815302686/lilibelle-otm.gif?ex=65e6c31c&is=65d44e1c&hm=c19f956a30d500632af1eba3978167461ad2a02cf3019c448d89fa7bd655c16a&",
-      "mp:attachments/1209369508905488414/1209394975612338206/zoulfia-otm.gif?ex=65e6c3d7&is=65d44ed7&hm=7983ebd6a13f2884d25b61320331c45163948a54f71fe99cfe4ae466924971dc&",
-      "mp:attachments/1209369508905488414/1209395599754006601/naar-otm.gif?ex=65e6c46c&is=65d44f6c&hm=34440c95f8e69a20c2ccaa964ed36271fbc2e017631516cd95eb84885507a720&",
-      "mp:attachments/1209369508905488414/1209396697881641000/blythe-otm.gif?ex=65e6c572&is=65d45072&hm=45fed1e4b0a548bb6faf327e7064028ad59758ba80bc15d506c2cd317d9d848c&",
-      "mp:attachments/1209369508905488414/1209397326586581002/grimm-otm.gif?ex=65e6c608&is=65d45108&hm=955ff43f5d547fc757499839a3d3b1e4f7f4d5e520aa0fa7a1c17bdf62f9e4d2&",
-      "mp:attachments/1209369508905488414/1209397977811263528/shuun-otm.gif?ex=65e6c6a3&is=65d451a3&hm=2352038b6d37ad7f4afbc93dafa3fa5579b4f0ed59a5791724f0dd5d8f119a78&",
-      "mp:attachments/1209369508905488414/1209398908782907412/zephyr-otm.gif?ex=65e6c781&is=65d45281&hm=2bb321b5c75530a6405bf3f95989581fc923d5f5e911be1c593e51790274344e&",
-      "mp:attachments/1209369508905488414/1209400182874181652/silvah-otm.gif?ex=65e6c8b1&is=65d453b1&hm=8e23e9fc192d59f644351583aea09628904acf1a1c8e67023f77bc3c82259dc4&",
-      "mp:attachments/1209369508905488414/1209400934812094514/roselia-otm.gif?ex=65e6c964&is=65d45464&hm=cb28387077846cff82511449ad142be6eccd4c81a1e003372ef62e4fe9f9d054&",
-      "mp:attachments/1209369508905488414/1209401703225499688/hydrangea-otm.gif?ex=65e6ca1b&is=65d4551b&hm=6960fbfff4d0c4e3977c334a13f99c25d28c4843531cbf50030a8bfa4340a49b&"
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213860606109679666/tumblr_nzl3y8Oxhq1uaylcyo1_1280.gif?ex=65f702c8&is=65e48dc8&hm=e24bc7d792cee0ae0587ad027104d6bad3ec80c3fbc2eb05d992dea50db44a4b&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213861214254534736/47c1d033740908d9d21dbe7327413512.gif?ex=65f70359&is=65e48e59&hm=87d1a58e30ef30656b00bcaaaa361e3d3615f57839995b8ce67c9e7e87bfbdf9&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213861940456202300/11155ce3fea1b44c04745647e49b1651ab51b8e0r1-540-304_hq.gif?ex=65f70407&is=65e48f07&hm=40cc9fc5e0a9bd3f2361e4a185d52c5aa08116228dba17db792ea1e045717f36&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213862767770079312/tumblr_7e53acfd809a7e762772ed5baeeff29a_c4f7fcd3_540.gif?ex=65f704cc&is=65e48fcc&hm=ba88d205ff0f4a8464805bb91da6a15d9e7c88ae18fea8b33cd2973a3ab889ea&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213862919176192041/2f2d3795cc7752df6345a13adc54a040bf2790aer1-500-282_00.gif?ex=65f704f0&is=65e48ff0&hm=d3fd1972d8976baaa9d5ad4b14e55afa1e0792a0eb92b778538cadc2636bdd3e&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863108058157146/tumblr_pff5e9wOiT1sg8uefo3_540.gif?ex=65f7051d&is=65e4901d&hm=da588e96ad3e4acb15419fbec71f5e16e7aac8cfa00cbc64fa4081429996fe14&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863306532757544/narberal-overlord.gif?ex=65f7054c&is=65e4904c&hm=497b855ad5f611beb473f824aea4f1c93ed1564a9d1ad25bf8facd7af9745d5d&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863775623581718/main-qimg-f7fd774dfaf931b21f9e4558531ae19d.gif?ex=65f705bc&is=65e490bc&hm=b5156dde16867dfd3b3a0d6282447277a308537f3e815712e5d1ee6b40aad705&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863964920909835/a25de5f3c925768c04eaf3335018da31.gif?ex=65f705e9&is=65e490e9&hm=d07113b4f3cb7af4148ef3f0d15063d82897f1b5559b7b85107ea00092724df9&",
+      "https://cdn.discordapp.com/attachments/1199386824582373516/1213864212892491786/20340ce89f3458b69541ad42a428aafc47a9e0c6r1-540-305_hq.gif?ex=65f70624&is=65e49124&hm=a1ac03b9fae0107dd9e052622d6232dbe0658202f2a483045a5a6229d48fce7e&"
     ],
-    "smallimg": ["{user:icon}"],
+    "smallimg": [],
     "button-1": [
       {
-        "name": "C",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CR",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CRE",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREA",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREAT",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE ",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE B",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY ",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY L",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LU",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUC",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCK",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCKY",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCKY ",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCKY E",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCKY EX",
-        "url": "https://discord.gg/XDPfrU4E9G"
-      },
-      {
-        "name": "CREATE BY LUCKY EXE",
+        "name": "✅₊꒷ Join discord ˳ʚ",
         "url": "https://discord.gg/XDPfrU4E9G"
       }
     ],
     "button-2": [
       {
-        "name": "Luckyx 's Contact",
-        "url": "https://instabio.cc/3110214HCjQEN"
+        "name": "୧₊˚❤️・Itzlevy ・꒱",
+        "url": "https://linktr.ee/loybung"
       }
     ]
   }
