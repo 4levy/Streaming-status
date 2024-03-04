@@ -1,17 +1,17 @@
 {
   "setup": {
     "city": "Bangkok",
-    "delay": 2.0
+    "delay": 10
   },
   "config": {
     "options": {
-      "watch-url": ["https://youtu.be/VQL2MUxERLI?si=nuzCFgHCjDo44ZGV"],
+      "watch-url": ["https://youtu.be/v3lwLZ1jKZM?si=e0gWlzzSUwjmK1mS"],
       "timestamp": "{end:1719680400}"
     },
     "text-1": [
       "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
       "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
       "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
       "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
       "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
@@ -46,7 +46,7 @@
       "{NF4(【 1 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀɪɴᴢ ᴏᴏᴀʟ ɢᴏᴡɴ 💙",
       "{NF4(【 2 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀʟʙᴇᴅᴏ ❤️",
       "{NF4(【 3 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱʜᴀʟʟᴛᴇᴀʀ 💜",
-      "{NF4(【 4 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱᴇʙᴀꜱ ᴛɪᴀɴ 💙",
+      "{NF4(【 4 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱᴇʙᴀꜱᴛɪᴀɴ 💙",
       "{NF4(【 5 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴄᴏᴄʏᴛᴜꜱ 🤍",
       "{NF4(【 6 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀᴜʀᴀ ʙᴇʟʟᴀ 💜",
       "{NF4(【 7 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴅᴇᴍɪᴜʀɢᴇ 💚",
@@ -69,7 +69,8 @@
       "{NF4(【 24 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒟𝓇𝒶𝑔𝑜𝓃𓆪 | ꜱᴜᴋᴜɴᴀ 💜"
     ],
     "bigimg": [
-      "https://images-ext-2.discordapp.net/external/nHAj6S2DHO1rCUkVMKK-GVoVUpTTMlVVXvIaeMV_nTA/https/i.pinimg.com/originals/17/fd/1c/17fd1c46c7504d24d6a5dec79131ce32.gif",
+      "mp:attachments/1209369508905488414/1209373581163630592/pixela-otm.gif?ex=65e6afea&is=65d43aea&hm=a35b99fac795bc52ee6d816376d0d7dbaf70bce35c79d3a069fb81e4eccb63e4&",
+      "https://media.discordapp.net/attachments/889976848581287946/1214162950114508913/17fd1c46c7504d24d6a5dec79131ce32.gif?ex=65f81c5d&is=65e5a75d&hm=7024b6f78f8d5378c8e9b7b4a2b1d14f04f1115d5414f0d5684375f499f87ca4&=",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214146128661053440/steamuserimages-a.akamaihd.gif?ex=65f80cb2&is=65e597b2&hm=5f9a9e08e5724c9ecb81ff5c3345b9e1de49f0204d5e01e8db7376001a098202&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214146344973766686/shalltear-bloodfallen.gif?ex=65f80ce6&is=65e597e6&hm=205258af2f06d7f7ffb3db83d1c723aa4be453ea26fd948cf4092ef59e1ad29c&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214146621303164989/Ujywj44.gif?ex=65f80d28&is=65e59828&hm=bc3f50451786e9cb59d608f598d1b910f6cfd5293fa666802e4cd602ee8ef179&",
@@ -79,14 +80,15 @@
       "https://cdn.discordapp.com/attachments/889976848581287946/1214148192086532106/c72b93fe00075398e1f67c66d90aaf4ac1c1cbdbr1-400-222_hq.gif?ex=65f80e9e&is=65e5999e&hm=cb25a3b426614783c5f8f5e0a3cb604eabfe125ccdc32586336e062a9eb81d58&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214148440867475516/animesher.com_momon-ains-overlord-1989562.gif?ex=65f80eda&is=65e599da&hm=4db325c69b18125d197d31959e85bf84bdea19fb03e33caee8d1a106fda5eba5&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214148692819320872/tumblr_pdb9jodppf1sg8uefo5_540.gif?ex=65f80f16&is=65e59a16&hm=c20bb982684987849068521fa885fae50ffaa9afe9fc5c7312064a9cc0985386&",
-      "https://cdn.discordapp.com/attachments/889976848581287946/1214148892216660029/Omake_Gif_Anime_-_Overlord_III_-_Episode_7_-_Yuri_Claps_Hands.gif?ex=65f80f45&is=65e59a45&hm=e9bcc6528d95b68bb0e2fd5e8d2d8e27f0ba88b009ba6044f6f9546296811ea9&",
+      "https://media.discordapp.net/attachments/889976848581287946/1214148892216660029/Omake_Gif_Anime_-_Overlord_III_-_Episode_7_-_Yuri_Claps_Hands.gif?ex=65f80f45&is=65e59a45&hm=e9bcc6528d95b68bb0e2fd5e8d2d8e27f0ba88b009ba6044f6f9546296811ea9&=&width=550&height=309",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214149068931072010/a25de5f3c925768c04eaf3335018ada31.gif?ex=65f80f6f&is=65e59a6f&hm=520711fbc85d12c2ddf513a6d8ea14225f574518a9ba0629d4718a593affe83e&",
-      "https://cdn.discordapp.com/attachments/889976848581287946/1214155971350364201/Cz.webp?ex=65f815dd&is=65e5a0dd&hm=caee549236d501c4bed96b5b9ce26f417792b8e36f002a12b39581df8e3b81a1&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214168006356377630/e76c278e8653e97b8c40d2c73ba7281e.gif?ex=65f82112&is=65e5ac12&hm=cb26f246ecef187dad12f8ebea7bcbdd827fc0c8b2c13b94fea51487bb4016fc&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214156098660081684/god-damn-its-crazy-we-got-2-knock-off-super-saiyan-this-v0-qwau8m1ohg9c1.gif?ex=65f815fb&is=65e5a0fb&hm=f21612174695484059e4e21d812033786e3e1942b1ac40b5345282ca7e7dc038&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214156192289656832/HPm6ea3.gif?ex=65f81612&is=65e5a112&hm=8cb9dcdd34f00f65d3b59af718b741d5afeb50b1fcb84d16501682883d177b40&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214150157168549960/91e7abc05c237cbc7313b2d19d47d7e8.gif?ex=65f81073&is=65e59b73&hm=a9dd09bab5c2c7141a316defc61fe79967ccac6cbd85e9dace06ea385a07e360&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214150379273584710/kiwi-araga-gushing-over-magical-girls.gif?ex=65f810a8&is=65e59ba8&hm=9db6c5ec0f7e0d6851167e51ccb557c3c2c3e1dbe576b44c6da95bb99813e936&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214150604822282271/gushing-over-magical-girls-hiiragi-utena.gif?ex=65f810de&is=65e59bde&hm=4ced5c82535f062c0a15b17fcc952993472367489b66ec503fea7d559689c271&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214170621211316284/classroom-of-the-elite-hiyori-shiina.gif?ex=65f82382&is=65e5ae82&hm=f4b34e7fd49f1a6784181b0e36f295cf3ae477a93e0b0ab6caaa63ae1cedc20d&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214150945768865832/22ff51592aeeff578e5cfd33bf832464.gif?ex=65f8112f&is=65e59c2f&hm=a32429470bb3b5b6124319757d1fc0bd586106589e69bd8c19f957869a3f66fb&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214151285562019870/j8166Oy.gif?ex=65f81180&is=65e59c80&hm=2981dc4ab58873270f52748ad418360103cff8b3d25c0982a0be595946e6645e&",
       "https://cdn.discordapp.com/attachments/889976848581287946/1214151491233910824/d498d2a439deb1acde2241bad82b5423.gif?ex=65f811b1&is=65e59cb1&hm=32d55c013c306c9ae6fd262446a86f433d6a5b0c22018d496cc30a5c4f356c30&",
@@ -166,7 +168,7 @@
     ],
     "button-2": [
       {
-        "name": "4levy's Contact",
+        "name": "4levy 's Contact",
         "url": "https://github.com/4levy"
       }
     ]
