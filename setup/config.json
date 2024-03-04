@@ -1,7 +1,7 @@
 {
   "setup": {
     "city": "bangkok",
-    "delay": 2.5
+    "delay": 0.5
   },
   "config": {
     "options": {
