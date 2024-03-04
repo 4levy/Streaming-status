@@ -9,19 +9,19 @@
       "timestamp": "{end:1719680400}"
     },
     "text-1": [
-      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕚 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕙 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕘 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕗 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕖 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕕 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕔ื 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕓 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕒 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕑 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕐 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}"
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}"
     ],
     "text-2": [
       "{NF4(【 1 / 16 】)} 👥 Username : 🗂️ {user:name} ",
@@ -167,7 +167,7 @@
     ],
     "button-2": [
       {
-        "name": "4levy 's Contact",
+        "name": "4levy's Contact",
         "url": "https://github.com/4levy"
       }
     ]
