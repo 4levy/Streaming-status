@@ -1,53 +1,173 @@
 {
   "setup": {
-    "city": "bangkok",
-    "delay": 0.5
+    "city": "Bangkok",
+    "delay": 2.0
   },
   "config": {
     "options": {
-      "watch-url": ["https://www.youtube.com/watch?v=IOtVtP0RAjM&list=RDIOtVtP0RAjM&start_radio=1"],
-      "timestamp": "{end:1735664400}"
+      "watch-url": ["https://youtu.be/VQL2MUxERLI?si=nuzCFgHCjDo44ZGV"],
+      "timestamp": "{end:1719680400}"
     },
-    "text-1": ["{NF4({hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{en=year:2})}"],
+    "text-1": [
+      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕚 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕙 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕘 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕗 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕖 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕕 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕔ื 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕓 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕒 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕑 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕐 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
+      "🕛 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}"
+    ],
     "text-2": [
-      "{NF4(〈1/10〉)} ⌥ ᴀɪɴᴢ ᴏᴏᴀʟ ɢᴏᴡɴ",
-      "{NF4(〈2/10〉)} ⌥ ᴀʟʙᴇᴅᴏ",
-      "{NF4(〈3/10〉)} ⌥ ꜱʜᴀʟʟᴛᴇᴀʀ",
-      "{NF4(〈4/10〉)} ⌥ ᴅᴇᴍɪᴜʀɢᴇ",
-      "{NF4(〈5/10〉)} ⌥ ᴀᴜʀᴀ ʙᴇʟʟᴀ",
-      "{NF4(〈6/10〉)} ⌥ ᴍᴀʀᴇ ʙᴇʟʟᴏ",
-      "{NF4(〈7/10〉)} ⌥ ɴᴀʀʙᴇʀᴀʟ",
-      "{NF4(〈8/10〉)} ⌥ ꜱᴇʙᴀꜱ ᴛɪᴀɴ",
-      "{NF4(〈9/10〉)} ⌥ ᴇɴᴛᴏᴍᴀ ᴠᴀꜱɪʟɪꜱꜱᴀ",
-      "{NF4(〈10/10〉)} ⌥ ᴄᴏᴄʏᴛᴜꜱ"
+      "{NF4(【 1 / 16 】)} 👥 Username : 🗂️ {user:name} ",
+      "{NF4(【 2 / 16 】)} 📄 Patch Steaming Rpc : 📄 {NF4({patch})} ",
+      "{NF4(【 3 / 16 】)} 📈 Uptime : {NF4({uptime})}",
+      "{NF4(【 4 / 16 】)} 📈 Cpu name : {NF4({cpu:name})} ",
+      "{NF4(【 5 / 16 】)} 📈 Cpu core : {NF4({cpu:cores})} ",
+      "{NF4(【 6 / 16 】)} 📈 {NF4({cpu:usage})} / 📈 {NF4({cpu:speed})} / 📈 {NF4({ram:usage})}",
+      "{NF4(【 7 / 16 】)} 📶 Ping Server : 📶 {NF4({ping})} ",
+      "{NF4(【 8 / 16 】)} 🌉 Country : {country} ",
+      "{NF4(【 9 / 16 】)} 🏞️ Temp in {city} : 🌡️ {NF4({temp:c})}  /  🌡️ {NF4({temp:f})} ",
+      "{NF4(【 10 / 16 】)} 🍃 Wind in {city} : 🍃 {NF4({wind:kph})} / 🍃 {NF4({wind:mph})} ",
+      "{NF4(【 11 / 16 】)} 🍃 Gust of wind in {city} : 🍃 {NF4({gust:kph})}  / 🍃 {NF4({gust:mph})} ",
+      "{NF4(【 12 / 16 】)} ☁️ Cloud in {city} : ☁️ {NF4({cloud})} ",
+      "{NF4(【 13 / 16 】)} 🌞 UV in {city} : 🌞 {uv}",
+      "{NF4(【 14 / 16 】)} 🦠 Pm 2.5 in {city} : 🦠 {NF4({pm2.5})}",
+      "{NF4(【 15 / 16 】)} 💧 Humidity in {city} : 💧 {NF4({humidity})}",
+      "{NF4(【 16 / 16 】)} 🌌 Visibility in {city} : 🌌 {NF4({vis:km})} / 🌌 {NF4({vis:mi})}"
     ],
     "text-3": [
-      "{NF4(🌏 {city} | ☀️ {uv})}",
-      "{NF4(🌡️ {temp:c} | 🍃 {wind:kph})}",
-      "{NF4(💧 {humidity} | ☁ {cloud})}"
+      "𓆩𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝙿𝙸𝚇𝙴𝙻𝙰 𝙿𝚁𝙾𝙹𝙴𝙲𝚃𓆪",
+      "𓆩𝐑𝐄𝐒𝐊𝐈𝐍 𝐁𝐘 𝟒Ł𝐞𝐯𝐲𓆪",
+      "{NF4(【 1 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀɪɴᴢ ᴏᴏᴀʟ ɢᴏᴡɴ 💙",
+      "{NF4(【 2 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀʟʙᴇᴅᴏ ❤️",
+      "{NF4(【 3 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱʜᴀʟʟᴛᴇᴀʀ 💜",
+      "{NF4(【 4 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱᴇʙᴀꜱ ᴛɪᴀɴ 💙",
+      "{NF4(【 5 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴄᴏᴄʏᴛᴜꜱ 🤍",
+      "{NF4(【 6 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀᴜʀᴀ ʙᴇʟʟᴀ 💜",
+      "{NF4(【 7 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴅᴇᴍɪᴜʀɢᴇ 💚",
+      "{NF4(【 8 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴍᴀʀᴇ ʙᴇʟʟᴏ 💙",
+      "{NF4(【 9 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ɴᴀʀʙᴇʀᴀʟ ɢᴀᴍᴍᴀ ❤️",
+      "{NF4(【 10 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ʟᴜᴘᴜꜱʀᴇɢɪɴᴀ ʙᴇᴛᴀ 💙",
+      "{NF4(【 11 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ʏᴜʀɪ ᴀʟᴘʜᴀ 💙",
+      "{NF4(【 12 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴇɴᴛᴏᴍᴀ ᴠᴀꜱɪʟɪꜱꜱᴀ ᴢᴇᴛᴀ 💚",
+      "{NF4(【 13 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴅᴇʟᴛᴀ 🤍",
+      "{NF4(【 14 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋᴏᴍᴀʀɪ 💙",
+      "{NF4(【 15 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴀʀɪꜱᴜ ꜱᴀᴋᴀʏᴀɴᴀɢɪ ❤️",
+      "{NF4(【 16 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ꜱᴜᴢᴜɴᴇ ʜᴏʀɪᴋɪᴛᴀ 💙",
+      "{NF4(【 17 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋɪᴡɪ ᴀʀᴀɢᴀ 💜",
+      "{NF4(【 18 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴜᴛᴇɴᴀ ʜɪɪʀᴀɢɪ 💛",
+      "{NF4(【 19 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ʜɪʏᴏʀɪ ꜱʜɪɪɴᴀ 🖤",
+      "{NF4(【 20 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴍᴇɢᴜᴍɪɴ 💙",
+      "{NF4(【 21 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ꜱʜɪɴᴏʙᴜ ᴏꜱʜɪɴᴏ 💙",
+      "{NF4(【 22 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋᴜʀᴜᴍɪ ᴛᴏᴋɪꜱᴀᴋɪ 🤍",
+      "{NF4(【 23 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒟𝓇𝒶𝑔𝑜𝓃𓆪 | ᴀɴᴏꜱ ᴠᴏʟᴅɪɢᴏᴀᴅ ❤️",
+      "{NF4(【 24 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒟𝓇𝒶𝑔𝑜𝓃𓆪 | ꜱᴜᴋᴜɴᴀ 💜"
     ],
     "bigimg": [
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213860606109679666/tumblr_nzl3y8Oxhq1uaylcyo1_1280.gif?ex=65f702c8&is=65e48dc8&hm=e24bc7d792cee0ae0587ad027104d6bad3ec80c3fbc2eb05d992dea50db44a4b&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213861214254534736/47c1d033740908d9d21dbe7327413512.gif?ex=65f70359&is=65e48e59&hm=87d1a58e30ef30656b00bcaaaa361e3d3615f57839995b8ce67c9e7e87bfbdf9&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213861940456202300/11155ce3fea1b44c04745647e49b1651ab51b8e0r1-540-304_hq.gif?ex=65f70407&is=65e48f07&hm=40cc9fc5e0a9bd3f2361e4a185d52c5aa08116228dba17db792ea1e045717f36&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213862767770079312/tumblr_7e53acfd809a7e762772ed5baeeff29a_c4f7fcd3_540.gif?ex=65f704cc&is=65e48fcc&hm=ba88d205ff0f4a8464805bb91da6a15d9e7c88ae18fea8b33cd2973a3ab889ea&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213862919176192041/2f2d3795cc7752df6345a13adc54a040bf2790aer1-500-282_00.gif?ex=65f704f0&is=65e48ff0&hm=d3fd1972d8976baaa9d5ad4b14e55afa1e0792a0eb92b778538cadc2636bdd3e&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863108058157146/tumblr_pff5e9wOiT1sg8uefo3_540.gif?ex=65f7051d&is=65e4901d&hm=da588e96ad3e4acb15419fbec71f5e16e7aac8cfa00cbc64fa4081429996fe14&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863306532757544/narberal-overlord.gif?ex=65f7054c&is=65e4904c&hm=497b855ad5f611beb473f824aea4f1c93ed1564a9d1ad25bf8facd7af9745d5d&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863775623581718/main-qimg-f7fd774dfaf931b21f9e4558531ae19d.gif?ex=65f705bc&is=65e490bc&hm=b5156dde16867dfd3b3a0d6282447277a308537f3e815712e5d1ee6b40aad705&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213863964920909835/a25de5f3c925768c04eaf3335018da31.gif?ex=65f705e9&is=65e490e9&hm=d07113b4f3cb7af4148ef3f0d15063d82897f1b5559b7b85107ea00092724df9&",
-      "https://cdn.discordapp.com/attachments/1199386824582373516/1213864212892491786/20340ce89f3458b69541ad42a428aafc47a9e0c6r1-540-305_hq.gif?ex=65f70624&is=65e49124&hm=a1ac03b9fae0107dd9e052622d6232dbe0658202f2a483045a5a6229d48fce7e&"
+      "https://images-ext-2.discordapp.net/external/nHAj6S2DHO1rCUkVMKK-GVoVUpTTMlVVXvIaeMV_nTA/https/i.pinimg.com/originals/17/fd/1c/17fd1c46c7504d24d6a5dec79131ce32.gif?width=400&height=224",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214146128661053440/steamuserimages-a.akamaihd.gif?ex=65f80cb2&is=65e597b2&hm=5f9a9e08e5724c9ecb81ff5c3345b9e1de49f0204d5e01e8db7376001a098202&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214146344973766686/shalltear-bloodfallen.gif?ex=65f80ce6&is=65e597e6&hm=205258af2f06d7f7ffb3db83d1c723aa4be453ea26fd948cf4092ef59e1ad29c&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214146621303164989/Ujywj44.gif?ex=65f80d28&is=65e59828&hm=bc3f50451786e9cb59d608f598d1b910f6cfd5293fa666802e4cd602ee8ef179&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214147133041549312/u4nV1tB.gif?ex=65f80da2&is=65e598a2&hm=451495e74240e89c37cbe746895d71ed384d63f42e13542dc996c5892f3d4fcd&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214147325547651152/Omake_Gif_Anime_-_Overlord_III_-_Episode_4_-_Ains_Headpats_Aura.gif?ex=65f80dd0&is=65e598d0&hm=f106b5f9b79d180b5f70ee623bb488b5505cae1cc4a4b04505afdf8b08fc6c86&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214148012767449128/tumblr_caf05762effa9e53538dd3140f57c39b_8a00e8bf_1280.gif?ex=65f80e74&is=65e59974&hm=e4fcb557e324aff76527ea20eb16eeb30e98ca45ec2190a24dd9fb90f57a3f0b&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214148192086532106/c72b93fe00075398e1f67c66d90aaf4ac1c1cbdbr1-400-222_hq.gif?ex=65f80e9e&is=65e5999e&hm=cb25a3b426614783c5f8f5e0a3cb604eabfe125ccdc32586336e062a9eb81d58&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214148440867475516/animesher.com_momon-ains-overlord-1989562.gif?ex=65f80eda&is=65e599da&hm=4db325c69b18125d197d31959e85bf84bdea19fb03e33caee8d1a106fda5eba5&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214148692819320872/tumblr_pdb9jodppf1sg8uefo5_540.gif?ex=65f80f16&is=65e59a16&hm=c20bb982684987849068521fa885fae50ffaa9afe9fc5c7312064a9cc0985386&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214148892216660029/Omake_Gif_Anime_-_Overlord_III_-_Episode_7_-_Yuri_Claps_Hands.gif?ex=65f80f45&is=65e59a45&hm=e9bcc6528d95b68bb0e2fd5e8d2d8e27f0ba88b009ba6044f6f9546296811ea9&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214149068931072010/a25de5f3c925768c04eaf3335018ada31.gif?ex=65f80f6f&is=65e59a6f&hm=520711fbc85d12c2ddf513a6d8ea14225f574518a9ba0629d4718a593affe83e&",
+      "https://static.wikia.nocookie.net/topstrongest/images/b/bf/Cz.gif/revision/latest?cb=20190201141411",
+      "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fgod-damn-its-crazy-we-got-2-knock-off-super-saiyan-this-v0-qwau8m1ohg9c1.gif%3Fwidth%3D498%26auto%3Dwebp%26s%3D67f5bd508ba1ea4dfe3d289202da0fd1d28aa872",
+      "https://i.imgur.com/HPm6ea3.gif",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214150157168549960/91e7abc05c237cbc7313b2d19d47d7e8.gif?ex=65f81073&is=65e59b73&hm=a9dd09bab5c2c7141a316defc61fe79967ccac6cbd85e9dace06ea385a07e360&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214150379273584710/kiwi-araga-gushing-over-magical-girls.gif?ex=65f810a8&is=65e59ba8&hm=9db6c5ec0f7e0d6851167e51ccb557c3c2c3e1dbe576b44c6da95bb99813e936&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214150604822282271/gushing-over-magical-girls-hiiragi-utena.gif?ex=65f810de&is=65e59bde&hm=4ced5c82535f062c0a15b17fcc952993472367489b66ec503fea7d559689c271&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214150945768865832/22ff51592aeeff578e5cfd33bf832464.gif?ex=65f8112f&is=65e59c2f&hm=a32429470bb3b5b6124319757d1fc0bd586106589e69bd8c19f957869a3f66fb&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214151285562019870/j8166Oy.gif?ex=65f81180&is=65e59c80&hm=2981dc4ab58873270f52748ad418360103cff8b3d25c0982a0be595946e6645e&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214151491233910824/d498d2a439deb1acde2241bad82b5423.gif?ex=65f811b1&is=65e59cb1&hm=32d55c013c306c9ae6fd262446a86f433d6a5b0c22018d496cc30a5c4f356c30&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214153414108385320/anos-voldigoad.gif?ex=65f8137b&is=65e59e7b&hm=7bce8265984916ee4a3c0fa0ff5fd6bd121ebce8742bafef32340736c67e59c7&",
+      "https://cdn.discordapp.com/attachments/889976848581287946/1214153668136402974/7l6cBTL.gif?ex=65f813b8&is=65e59eb8&hm=2f21252559a1060d878dc727cc23c12e624bfbfdefbfb88449ca3a9ab062a917&"
     ],
     "smallimg": [],
     "button-1": [
       {
-        "name": "✅₊꒷ Join discord ˳ʚ",
-        "url": "https://discord.com/invite/aqt6thEVV7"
+        "name": "M",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MI",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIY",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYA",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYAK",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYAKO",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYAKO ",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYAKO V",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "MIYAKO V1",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "O",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OW",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN BY 4",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN BY 4l",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN BY 4le",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN BY 4lev",
+        "url": "https://discord.gg/aqt6thEVV7"
+      },
+      {
+        "name": "OWN BY 4levy",
+        "url": "https://discord.gg/aqt6thEVV7"
       }
     ],
     "button-2": [
       {
-        "name": "୧₊˚❤️・Itzlevy ・꒱",
+        "name": "4levy 's Contact",
         "url": "https://github.com/4levy"
       }
     ]
