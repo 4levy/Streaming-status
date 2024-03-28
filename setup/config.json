@@ -3,12 +3,10 @@
         "city": "Bangkok",
         "delay": 10
     },
-    "config": {
-        "options": {
-            "watch-url": [
-                "https://youtu.be/FQxPPbAfol8?si=HV4hRlK9U-xudskI"
-            ],
-            "timestamp": "{end:1719680400}"
+  "config": {
+    "options": {
+      "watch-url": ["https://youtu.be/Sb2KvdNgKQc?si=OeWKsMIEnYgNNGQU"],
+      "timestamp": "{end:1719680400}"
         },
         "text-1": [
             "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
