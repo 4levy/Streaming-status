@@ -1,176 +1,150 @@
 {
-  "setup": {
-    "city": "Bangkok",
-    "delay": 10
-  },
-  "config": {
-    "options": {
-      "watch-url": ["https://youtu.be/v3lwLZ1jKZM?si=e0gWlzzSUwjmK1mS"],
-      "timestamp": "{end:1719680400}"
+    "setup": {
+        "city": "Bangkok",
+        "delay": 10
     },
-    "text-1": [
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📁 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({th=date})} / {NF4({th=month:3})} / {NF4({th=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}",
-      "⏰ 【 {NF4({hour:1})} : {NF4({min:1})} 】 𒉭 【 {NF4({en=date})} / {NF4({en=month:3})} / {NF4({en=year:2})} 】 📂 𝐂𝐡𝐚𝐧𝐠𝐞 𝐂𝐨𝐮𝐧𝐭: {NF4({count})}"
-    ],
-    "text-2": [
-      "{NF4(【 1 / 16 】)} 👥 Username : 🗂️ {user:name} ",
-      "{NF4(【 2 / 16 】)} 📄 Patch Steaming Rpc : 📄 {NF4({patch})} ",
-      "{NF4(【 3 / 16 】)} 📈 Uptime : {NF4({uptime})}",
-      "{NF4(【 4 / 16 】)} 📈 Cpu name : {NF4({cpu:name})} ",
-      "{NF4(【 5 / 16 】)} 📈 Cpu core : {NF4({cpu:cores})} ",
-      "{NF4(【 6 / 16 】)} 📈 {NF4({cpu:usage})} / 📈 {NF4({cpu:speed})} / 📈 {NF4({ram:usage})}",
-      "{NF4(【 7 / 16 】)} 📶 Ping Server : 📶 {NF4({ping})} ",
-      "{NF4(【 8 / 16 】)} 🌉 Country : {country} ",
-      "{NF4(【 9 / 16 】)} 🏞️ Temp in {city} : 🌡️ {NF4({temp:c})}  /  🌡️ {NF4({temp:f})} ",
-      "{NF4(【 10 / 16 】)} 🍃 Wind in {city} : 🍃 {NF4({wind:kph})} / 🍃 {NF4({wind:mph})} ",
-      "{NF4(【 11 / 16 】)} 🍃 Gust of wind in {city} : 🍃 {NF4({gust:kph})}  / 🍃 {NF4({gust:mph})} ",
-      "{NF4(【 12 / 16 】)} ☁️ Cloud in {city} : ☁️ {NF4({cloud})} ",
-      "{NF4(【 13 / 16 】)} 🌞 UV in {city} : 🌞 {uv}",
-      "{NF4(【 14 / 16 】)} 🦠 Pm 2.5 in {city} : 🦠 {NF4({pm2.5})}",
-      "{NF4(【 15 / 16 】)} 💧 Humidity in {city} : 💧 {NF4({humidity})}",
-      "{NF4(【 16 / 16 】)} 🌌 Visibility in {city} : 🌌 {NF4({vis:km})} / 🌌 {NF4({vis:mi})}"
-    ],
-    "text-3": [
-      "𓆩ᔯʟᴇᴠʏ𓆪",
-      "{NF4(【 1 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀɪɴᴢ ᴏᴏᴀʟ ɢᴏᴡɴ 💙",
-      "{NF4(【 2 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀʟʙᴇᴅᴏ ❤️",
-      "{NF4(【 3 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱʜᴀʟʟᴛᴇᴀʀ 💜",
-      "{NF4(【 4 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ꜱᴇʙᴀꜱᴛɪᴀɴ 💙",
-      "{NF4(【 5 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴄᴏᴄʏᴛᴜꜱ 🤍",
-      "{NF4(【 6 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴀᴜʀᴀ ʙᴇʟʟᴀ 💜",
-      "{NF4(【 7 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒮𓆪 | ᴅᴇᴍɪᴜʀɢᴇ 💚",
-      "{NF4(【 8 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴍᴀʀᴇ ʙᴇʟʟᴏ 💙",
-      "{NF4(【 9 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ɴᴀʀʙᴇʀᴀʟ ɢᴀᴍᴍᴀ ❤️",
-      "{NF4(【 10 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ʟᴜᴘᴜꜱʀᴇɢɪɴᴀ ʙᴇᴛᴀ 💙",
-      "{NF4(【 11 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ʏᴜʀɪ ᴀʟᴘʜᴀ 💙",
-      "{NF4(【 12 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴇɴᴛᴏᴍᴀ ᴠᴀꜱɪʟɪꜱꜱᴀ ᴢᴇᴛᴀ 💚",
-      "{NF4(【 13 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒞𝓁𝒶𝓈𝓈 𝒜𓆪 | ᴅᴇʟᴛᴀ 🤍",
-      "{NF4(【 14 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋᴏᴍᴀʀɪ 💙",
-      "{NF4(【 15 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴀʀɪꜱᴜ ꜱᴀᴋᴀʏᴀɴᴀɢɪ ❤️",
-      "{NF4(【 16 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ꜱᴜᴢᴜɴᴇ ʜᴏʀɪᴋɪᴛᴀ 💙",
-      "{NF4(【 17 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋɪᴡɪ ᴀʀᴀɢᴀ 💜",
-      "{NF4(【 18 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴜᴛᴇɴᴀ ʜɪɪʀᴀɢɪ 💛",
-      "{NF4(【 19 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ʜɪʏᴏʀɪ ꜱʜɪɪɴᴀ 🖤",
-      "{NF4(【 20 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴍᴇɢᴜᴍɪɴ 💙",
-      "{NF4(【 21 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ꜱʜɪɴᴏʙᴜ ᴏꜱʜɪɴᴏ 💙",
-      "{NF4(【 22 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒲𝒶𝒾𝒻𝓊𓆪 | ᴋᴜʀᴜᴍɪ ᴛᴏᴋɪꜱᴀᴋɪ 🤍",
-      "{NF4(【 23 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒟𝓇𝒶𝑔𝑜𝓃𓆪 | ᴀɴᴏꜱ ᴠᴏʟᴅɪɢᴏᴀᴅ ❤️",
-      "{NF4(【 24 / 24 】)}  𝟒Ł𝐞𝐯𝐲 𓆩𝒟𝓇𝒶𝑔𝑜𝓃𓆪 | ꜱᴜᴋᴜɴᴀ 💜"
-    ],
-    "bigimg": [
-      "https://i.ibb.co/M5tzMM3/waifu-anime.gif",
-      "https://i.ibb.co/RzvmmfT/17fd1c46c7504d24d6a5dec79131ce32.gif",
-      "https://i.ibb.co/fCrTWbB/steamuserimages-a-akamaihd.gif",
-      "https://i.ibb.co/4tph3Pt/shalltear-bloodfallen.gif",
-      "https://i.ibb.co/tYQrZLr/Ujywj44.gif",
-      "https://i.ibb.co/9nfZRvj/u4nV1tB.gif",
-      "https://i.ibb.co/b79hKTc/Omake-Gif-Anime-Overlord-III-Episode-4-Ains-Headpats-Aura.gif",
-      "https://i.ibb.co/yV4PnPg/tumblr-caf05762effa9e53538dd3140f57c39b-8a00e8bf-1280.gif",
-      "https://i.ibb.co/JxJBQ8K/c72b93fe00075398e1f67c66d90aaf4ac1c1cbdbr1-400-222-hq.gif",
-      "https://i.ibb.co/PjpWZPP/animesher-com-momon-ains-overlord-1989562.gif",
-      "https://i.ibb.co/vQDwqcc/tumblr-pdb9jodppf1sg8uefo5-540.gif",
-      "https://i.ibb.co/ZhcVJfZ/Omake-Gif-Anime-Overlord-III-Episode-7-Yuri-Claps-Hands.gif",
-      "https://i.ibb.co/qyY5Nj5/a25de5f3c925768c04eaf3335018ada31.gif",
-      "https://i.ibb.co/59bxrdz/e76c278e8653e97b8c40d2c73ba7281e.gif",
-      "https://i.ibb.co/Kjz9hB6/god-damn-its-crazy-we-got-2-knock-off-super-saiyan-this-v0-qwau8m1ohg9c1.gif",
-      "https://i.ibb.co/R05jG5Z/HPm6ea3.gif",
-      "https://i.ibb.co/cg3pZs9/91e7abc05c237cbc7313b2d19d47d7e8.gif",
-      "https://i.ibb.co/QmkBcpY/kiwi-araga-gushing-over-magical-girls.gif",
-      "https://i.ibb.co/wdnF6dv/gushing-over-magical-girls-hiiragi-utena.gif",
-      "https://i.ibb.co/F0MTDFf/classroom-of-the-elite-hiyori-shiina.gif",
-      "https://i.ibb.co/dK3dVc1/22ff51592aeeff578e5cfd33bf832464.gif",
-      "https://i.ibb.co/6DqyQMf/j8166Oy.gif",
-      "https://i.ibb.co/9NZLKtb/d498d2a439deb1acde2241bad82b5423.gif",
-      "https://i.ibb.co/z6RfbJz/anos-voldigoad.gif",
-      "https://i.ibb.co/4FGL4wV/7l6cBTL.gif"
-    ],
-    "smallimg": [],
-    "button-1": [
-      {
-        "name": "M",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MI",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIY",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYA",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYAK",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYAKO",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYAKO ",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYAKO V",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "MIYAKO V1",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "O",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OW",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN BY 4",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN BY 4l",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN BY 4le",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN BY 4lev",
-        "url": "https://discord.gg/aqt6thEVV7"
-      },
-      {
-        "name": "OWN BY 4levy",
-        "url": "https://discord.gg/aqt6thEVV7"
-      }
-    ],
-    "button-2": [
-      {
-        "name": "4levy 's Contact",
-        "url": "https://github.com/4levy"
-      }
-    ]
-  }
+    "config": {
+        "options": {
+            "watch-url": [
+                "https://youtu.be/FQxPPbAfol8?si=HV4hRlK9U-xudskI"
+            ],
+            "timestamp": "{end:1719680400}"
+        },
+        "text-1": [
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📁 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📁 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📁 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📁 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📁 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}",
+            "⏰ 【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 📂 𝘊𝘩𝘢𝘯𝘨𝘦 𝘊𝘰𝘶𝘯𝘵: {NF6({count})}"
+        ],
+        "text-2": [
+            "{NF6(【 1 / 16 】)} 👥 Username : 🗂️ {user:name} ",
+            "{NF6(【 2 / 16 】)} 📄 Patch Steaming Rpc : 📄 {NF6({patch})} ",
+            "{NF6(【 3 / 16 】)} 📈 Uptime : {NF6({uptime})}",
+            "{NF6(【 4 / 16 】)} 📈 Cpu name : {NF6({cpu:name})} ",
+            "{NF6(【 5 / 16 】)} 📈 Cpu core : {NF6({cpu:cores})} ",
+            "{NF6(【 6 / 16 】)} 📈 {NF6({cpu:usage})} / 📈 {NF6({cpu:speed})} / 📈 {NF6({ram:usage})}",
+            "{NF6(【 7 / 16 】)} 📶 Ping Server : 📶 {NF6({ping})} ",
+            "{NF6(【 8 / 16 】)} 🌉 Country : {country} ",
+            "{NF6(【 9 / 16 】)} 🏞️ Temp in {city} : 🌡️ {NF6({temp:c})}  /  🌡️ {NF6({temp:f})} ",
+            "{NF6(【 10 / 16 】)} 🍃 Wind in {city} : 🍃 {NF6({wind:kph})} / 🍃 {NF6({wind:mph})} ",
+            "{NF6(【 11 / 16 】)} 🍃 Gust of wind in {city} : 🍃 {NF6({gust:kph})}  / 🍃 {NF6({gust:mph})} ",
+            "{NF6(【 12 / 16 】)} ☁️ Cloud in {city} : ☁️ {NF6({cloud})} ",
+            "{NF6(【 13 / 16 】)} 🌞 UV in {city} : 🌞 {uv}",
+            "{NF6(【 14 / 16 】)} 🦠 Pm 2.5 in {city} : 🦠 {NF6({pm2.5})}",
+            "{NF6(【 15 / 16 】)} 💧 Humidity in {city} : 💧 {NF6({humidity})}",
+            "{NF6(【 16 / 16 】)} 🌌 Visibility in {city} : 🌌 {NF6({vis:km})} / 🌌 {NF6({vis:mi})}"
+        ],
+        "text-3": [
+            "4ʟᴇᴠʏ",
+            "{NF6(【 1 / 10 】)}  4ʟᴇᴠʏ ᴀɴɢᴇʟ ᴏꜰ ᴅᴇᴀᴛʜ | 🌸 Rachel Gardner 🌸",
+            "{NF6(【 2 / 10 】)}  4ʟᴇᴠʏ ᴀɴɢᴇʟ ᴏꜰ ᴅᴇᴀᴛʜ | 💖 Isaac Foster 💖",
+            "{NF6(【 3 / 10 】)}  4ʟᴇᴠʏ ᴄʟᴀꜱꜱʀᴏᴏᴍ ᴏꜰ ᴛʜᴇ ᴇʟɪᴛᴇ | 🌸 ᴀʀɪꜱᴜ ꜱᴀᴋᴀʏᴀɴᴀɢɪ 🌸",
+            "{NF6(【 4 / 10 】)}  4ʟᴇᴠʏ ᴄʟᴀꜱꜱʀᴏᴏᴍ ᴏꜰ ᴛʜᴇ ᴇʟɪᴛᴇ | 🌸 ꜱᴜᴢᴜɴᴇ ʜᴏʀɪᴋɪᴛᴀ 🌸",
+            "{NF6(【 5 / 10 】)}  4ʟᴇᴠʏ ᴄʟᴀꜱꜱʀᴏᴏᴍ ᴏꜰ ᴛʜᴇ ᴇʟɪᴛᴇ | 🌸 ᴋᴇɪ ᴋᴀʀᴜɪᴢᴀᴡᴀ 🌸",
+            "{NF6(【 6 / 10 】)}  4ʟᴇᴠʏ ᴄʟᴀꜱꜱʀᴏᴏᴍ ᴏꜰ ᴛʜᴇ ᴇʟɪᴛᴇ | 🌸 ʜɪʏᴏʀɪ ꜱʜɪɪɴᴀ 🌸",
+            "{NF6(【 7 / 10 】)}  4ʟᴇᴠʏ ᴠᴀᴍᴘɪʀᴇ ᴘʀɪɴᴄᴇꜱꜱ | 🌸 ᴋᴏᴍᴀʀɪ 🌸",
+            "{NF6(【 8 / 10 】)}  4ʟᴇᴠʏ ᴅᴀᴛᴇ ᴀ ʟɪᴠᴇ | 🌸 ᴋᴜʀᴜᴍɪ ᴛᴏᴋɪꜱᴀᴋɪ 🌸",
+            "{NF6(【 9 / 10 】)}  4ʟᴇᴠʏ ᴅᴀᴛᴇ ᴀ ʟɪᴠᴇ | 🌸 ᴋᴏᴛᴏʀɪ ɪᴛꜱᴜᴋᴀ 🌸",
+            "{NF6(【 10 / 10 】)}  4ʟᴇᴠʏ ᴅᴀᴛᴇ ᴀ ʟɪᴠᴇ | 🌸 ʏᴏꜱʜɪɴᴏ 🌸"
+        ],
+        "bigimg": [
+            "Starter ",
+            "https://i.ibb.co/zP7bWBJ/4c27b258a8d890eef59bc796597879a2.gif",
+            "https://i.ibb.co/6Yr1Fvf/105f916e610c74c84a35523cdd553b7c.gif",
+            "https://i.ibb.co/h1H2fvt/arisu-sakayanagi.gif",
+            "https://i.ibb.co/cg3pZs9/91e7abc05c237cbc7313b2d19d47d7e8.gif",
+            "https://i.ibb.co/XXXLks6/219127.gif",
+            "https://i.ibb.co/F0MTDFf/classroom-of-the-elite-hiyori-shiina.gif",
+            "https://i.ibb.co/M5tzMM3/waifu-anime.gif",
+            "https://i.ibb.co/0VnPpPk/6181267f9d923cbc5a83e66f39919dc5.gif",
+            "https://i.ibb.co/tQ8jYqB/3dd730224059b8d474f8db675fc87008.gif",
+            "https://i.ibb.co/cQsgcD3/dad43bfa09470e523042a46c2550b5b7.gif"
+        ],
+        "smallimg": [],
+        "button-1": [
+            {
+                "name": "M",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MI",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIY",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYA",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYAK",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYAKO",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYAKO ",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYAKO V",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "MIYAKO V1",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "O",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OW",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN BY 4",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN BY 4l",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN BY 4le",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN BY 4lev",
+                "url": "https://discord.gg/aqt6thEVV7"
+            },
+            {
+                "name": "OWN BY 4levy",
+                "url": "https://discord.gg/aqt6thEVV7"
+            }
+        ],
+        "button-2": [
+            {
+                "name": "4levy 's Contact",
+                "url": "https://github.com/4levy"
+            }
+        ]
+    }
 }
