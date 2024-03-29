@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<meta name="description" content="Miyako V1 | discord.gg/jmmrQcwYP3" />
+<meta content="website" property="og:type" />
+<meta content="@4levy | A" property="og:title" />
+<meta content="Discord Server https://discord.gg/jmmrQcwYP3" property="og:description" />
+<meta content="@4levy | A" name="author" />
+<meta property="og:image" content="https://i.ibb.co/7j2Mrnv/3dd730224059b8d474f8db675fc87008.gif" />
+<meta content="#FFFFFF" name="theme-color" />
+<link rel="icon" type="image/x-icon" href="https://media.tenor.com/eKym9iGtj18AAAAM/natsumi.gif">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD5B41KFXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RD5B41KFXM');
+</script>
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #444;
+  }
+
+  body {
+    background-color: #141414; 
+    background-image: url();
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0d0d; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    pointer-events: none; /* Prevent mouse events on loading screen */
+  }
+
+  .loading-animation {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; 
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .status-bar {
+    color: #ffffff;
+    padding: 10px 0;
+  }
+
+  .content {
+    background-color: #141414; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: contents;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .rainbow-text {
+    animation: rainbow 5s linear infinite, glow 2s linear infinite alternate;
+  }
+
+  @keyframes rainbow {
+    0% { color: red; }
+    10% { color: orange; }
+    20% { color: yellow; }
+    30% { color: green; }
+    40% { color: blue; }
+    50% { color: indigo; }
+    60% { color: violet; }
+    70% { color: red; }
+    80% { color: orange; }
+    90% { color: yellow; }
+    100% { color: green; }
+  }
+
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px red, 0 0 10px red; }
+    100% { text-shadow: 0 0 15px red, 0 0 20px red, 0 0 25px red; }
+  }
+
+.white {
+  color: #ffffff;
+}
+
+</style>
+
+<style>
+  body {
+    overflow: hidden;
+  } 
+</style>
+
+</head>
+<body>
+
+<div class="loading-screen">
+  <div class="loading-animation"></div>
+</div>
+
+<div class="content">
+  <div class="status-bar">
+    <p class="rainbow-text">Status: Live</p>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h1 class="white">Started !</h1>
+      <hr>
+      <p>By <strong>4levy</strong></p>
+      <button onclick="openUrlInNewTab('https://4levy.netlify.app/')"><p><strong>4levy webite</strong></p>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  setTimeout(function() {
+    document.title = "Started | By 4levy";
+    document.querySelector('.loading-screen').style.display = 'none';
+    document.querySelector('.content').style.display = 'block';
+  }, 1000);
+</script>
+
+</body>
+</html>
