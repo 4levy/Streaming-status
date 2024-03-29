@@ -1,9 +1,10 @@
 const express = require('express');
+const path = require('path');
 const server = express();
 
 server.get('/', (req, res) => {
-  const imagePath = path.join(__dirname, 'index.html');
-  res.sendFile(imagePath);
+  const indexPath = path.join(__dirname, 'index.html');
+  res.sendFile(indexPath);
 });
 
 function keepAlive() {
