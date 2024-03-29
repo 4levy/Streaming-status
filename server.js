@@ -1,13 +1,11 @@
-const express = require('express');
-const server = express();
-
-server.all('/', (req, res) => {
-  res.send(`NOW GO TO ANY UPTIME APP and paste this link`)
-})
-
-function keepAlive() {
-  server.listen(8080, () => { console.log("Server is Ready!!" + Date.now()) });
-}
-
-module.exports = keepAlive;
-
+const express = require("express");
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+  const imagePath = path.join(__dirname, 'index.html');
+  res.sendFile(imagePath);
+});
+app.listen(port, () => {
+  console.log(`🔗 Listening to RTX: http://localhost:${port}`);
+});
+printWatermark();
