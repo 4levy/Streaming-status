@@ -1,10 +1,10 @@
 const express = require('express');
 const server = express();
 
-server.all('/', (req, res) => {
+app.get('/', (req, res) => {
   const imagePath = path.join(__dirname, 'index.html');
   res.sendFile(imagePath);
-})
+});
 
 function keepAlive() {
   server.listen(5555, () => { console.log("Server is Ready!!" + Date.now()) });
