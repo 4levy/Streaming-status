@@ -1,7 +1,7 @@
 {
     "setup": {
         "city": "Pattaya",
-        "delay": 10
+        "delay": 5
     },
   "config": {
     "options": {
