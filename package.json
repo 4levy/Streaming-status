@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@loybung/launcher": "^5.2.0",
+    "discord": "^0.8.2",
     "discord.js-selfbot-v13": "^3.1.4",
     "moment-timezone": "^0.5.45",
     "node-cron": "^3.0.3",
