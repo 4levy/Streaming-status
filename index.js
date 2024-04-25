@@ -10,9 +10,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`🔗 Listening to port : http://localhost:${port}`);
+  console.log(`🔗 Listening to port: http://localhost:${port}`);
 });
-
 
 const options = {
   url: "https://loybung.vercel.app/api/project/streaming",
@@ -20,5 +19,9 @@ const options = {
 };
 
 launcher(options, (run) => {
-  run();
+  if (typeof run === 'function') {
+    run();
+  } else {
+    console.error("Error: 'run' is not a function");
+  }
 });
