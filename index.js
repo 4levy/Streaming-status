@@ -20,5 +20,9 @@ const options = {
 };
 
 launcher(options, (run) => {
-  run();
+  if (typeof run === 'function') {
+    run();
+  } else {
+    console.error("Error: 'run' is not a function");
+  }
 });
