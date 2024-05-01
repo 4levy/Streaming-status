@@ -1,9 +1,24 @@
-const { Launcher } = require("@loybung/launcher");
-const { resolve } = require("path");
+const { launcher } = require("@loybung/launcher");
+const path = require("path");
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const app = new Launcher("https://loybung.vercel.app/api/project/customstatus");
+app.get('/', (req, res) => {
+  const imagePath = path.join(__dirname, 'index.html');
+  res.sendFile(imagePath);
+});
 
-app.setPath(resolve(__dirname, "./app.js"));
-app.setExpire(null);
+app.listen(port, () => {
+  console.log(`🔗 Listening to port : http://localhost:${port}`);
+});
 
-app.Run().catch((err) => console.log(err.message));
+
+const options = {
+  url: "https://loybung.vercel.app/api/project/streaming",
+  filepath: path.resolve(__dirname, "app.js"),
+};
+
+launcher(options, (run) => {
+  run();
+});
