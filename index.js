@@ -1,4 +1,4 @@
-const { launcher } = require("@loybung/launcher");
+const { Launcher } = require("@loybung/launcher");
 const path = require("path");
 const express = require("express");
 const starting = express();
