@@ -13,16 +13,9 @@ app.listen(port, () => {
   console.log(`🔗 Listening to port : http://localhost:${port}`);
 });
 
+const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
 
-const options = {
-  url: "https://loybung.vercel.app/api/project/streaming",
-  filepath: path.resolve(__dirname, "app.js"),
-};
+app.setPath(resolve(__dirname, "./app.js"));
+app.setExpire(null);
 
-launcher(options, (run) => {
-  if (typeof run === 'function') {
-    run();
-  } else {
-    console.error("Error: 'run' is not a function");
-  }
-});
+app.Run().catch((err) => console.log(err.message));
