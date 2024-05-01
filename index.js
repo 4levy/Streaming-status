@@ -1,15 +1,15 @@
 const { launcher } = require("@loybung/launcher");
 const path = require("path");
 const express = require("express");
-const app = express();
+const starting = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
+starting.get('/', (req, res) => {
   const imagePath = path.join(__dirname, 'index.html');
   res.sendFile(imagePath);
 });
 
-app.listen(port, () => {
+starting.listen(port, () => {
   console.log(`🔗 Listening to port : http://localhost:${port}`);
 });
 
