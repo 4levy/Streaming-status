@@ -3,7 +3,7 @@
 
 
 # STATUS PAGE
-![image](https://github.com/4levy/custom-status-4levy/assets/100963276/95981b33-224a-4f02-ade8-a9749231cfbb)
+![image](https://github.com/4levy/custom-status-4levy/assets/100963276/c2d19ae7-af14-409f-a389-ae2198b888f0)
 
 
 # Example 
