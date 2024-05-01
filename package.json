@@ -1,5 +1,5 @@
 {
-  "name": "lc-stream",
+  "name": "status",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@loybung/launcher": "^5.2.0",
-    "discord": "^0.8.2",
+    "@loybung/launcher": "^6.0.0",
     "discord.js-selfbot-v13": "^3.1.4",
     "moment-timezone": "^0.5.45",
     "node-cron": "^3.0.3",
