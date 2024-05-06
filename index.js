@@ -1,6 +1,7 @@
 const { Launcher } = require("@loybung/launcher");
 const { resolve } = require("path");
 const express = require("express");
+
 const starting = express();
 const port = 3000;
 
@@ -17,4 +18,18 @@ const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
 app.setPath(resolve(__dirname, "./app.js"));
 app.setExpire(null);
 
-app.Run().catch((err) => console.log(err.message));
+function startApp() {
+  app.Run().catch((err) => {
+    console.error(err.message);
+    console.log("Restarting the application...");
+    startApp();
+  });
+}
+
+startApp();
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  console.log("Restarting the application due to uncaught exception...");
+  startApp();
+});
