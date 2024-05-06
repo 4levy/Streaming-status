@@ -1,3 +1,4 @@
+
 {
     "setup": {
         "city": "pattay",
@@ -5,7 +6,7 @@
     },
   "config": {
     "options": {
-      "watch-url": ["https://youtu.be/Sb2KvdNgKQc?si=OeWKsMIEnYgNNGQU"],
+      "watch-url": ["https://youtu.be/HP3LyLmlsNQ?si=J_oK189g9UaZmx1g"],
       "timestamp": "{end:1719680400}"
         },
         "text-1": [
@@ -26,19 +27,23 @@
         "text-2": ["⤿ ☆★☆★☆★☆★ ༊*·˚", "⤿ ★☆★☆★☆★☆ ༊*·˚"],
         "text-3": [
             "4ʟᴇᴠʏ",
-            "{NF6(【 1 / 13 】)}  | 🌸 Rachel Gardner 🌸",
-            "{NF6(【 2 / 13 】)}  | 💖 Isaac Foster 💖",
-            "{NF6(【 3 / 13 】)}  | 🌸 ᴀʀɪꜱᴜ ꜱᴀᴋᴀʏᴀɴᴀɢɪ 🌸",
-            "{NF6(【 4 / 13 】)}  | 🌸 ꜱᴜᴢᴜɴᴇ ʜᴏʀɪᴋɪᴛᴀ 🌸",
-            "{NF6(【 5 / 13 】)}  | 🌸 ᴋᴇɪ ᴋᴀʀᴜɪᴢᴀᴡᴀ 🌸",
-            "{NF6(【 6 / 13 】)}  | 🌸 ʜɪʏᴏʀɪ ꜱʜɪɪɴᴀ 🌸",
-            "{NF6(【 7 / 13 】)}  | 🌸 ᴋᴏᴍᴀʀɪ 🌸",
-            "{NF6(【 8 / 13 】)}  | 🌸 ᴋᴜʀᴜᴍɪ ᴛᴏᴋɪꜱᴀᴋɪ 🌸",
-            "{NF6(【 9 / 13 】)}  | 🌸 ᴋᴏᴛᴏʀɪ ɪᴛꜱᴜᴋᴀ 🌸",
-            "{NF6(【 10 / 13 】)} | 🌸 ʏᴏꜱʜɪɴᴏ 🌸",
-            "{NF6(【 11 / 13 】)} | 🌸 ᴍᴇɢᴜᴍɪɴ 🌸",
-            "{NF6(【 12 / 13 】)} | 🌸 ᴍᴀꜱʜɪʀᴏ ꜱʜɪɪɴᴀ 🌸",
-            "{NF6(【 13 / 13 】)} | น่ารักที่สุด 🌸 ᴘᴜɴʏᴜʀᴜ ᴛᴀᴋᴀɴᴀꜱʜɪ 🌸"
+            "{NF6(【 1 / 17 】)}  | 🌸 Rachel Gardner 🌸",
+            "{NF6(【 2 / 17 】)}  | 💖 Isaac Foster 💖",
+            "{NF6(【 3 / 17 】)}  | 🌸 ᴀʀɪꜱᴜ ꜱᴀᴋᴀʏᴀɴᴀɢɪ 🌸",
+            "{NF6(【 4 / 17 】)}  | 🌸 ꜱᴜᴢᴜɴᴇ ʜᴏʀɪᴋɪᴛᴀ 🌸",
+            "{NF6(【 5 / 17 】)}  | 🌸 ᴋᴇɪ ᴋᴀʀᴜɪᴢᴀᴡᴀ 🌸",
+            "{NF6(【 6 / 17 】)}  | 🌸 ʜɪʏᴏʀɪ ꜱʜɪɪɴᴀ 🌸",
+            "{NF6(【 7 / 17 】)}  | 🌸 ᴋᴏᴍᴀʀɪ 🌸",
+            "{NF6(【 8 / 17 】)}  | 🌸 ᴋᴜʀᴜᴍɪ ᴛᴏᴋɪꜱᴀᴋɪ 🌸",
+            "{NF6(【 9 / 17 】)}  | 🌸 ᴋᴏᴛᴏʀɪ ɪᴛꜱᴜᴋᴀ 🌸",
+            "{NF6(【 10 / 17 】)} | 🌸 ʏᴏꜱʜɪɴᴏ 🌸",
+            "{NF6(【 11 / 17 】)} | 🌸 ᴍᴇɢᴜᴍɪɴ 🌸",
+            "{NF6(【 12 / 17 】)} | 🌸 ᴍᴀꜱʜɪʀᴏ ꜱʜɪɪɴᴀ 🌸",
+            "{NF6(【 13 / 17 】)} | น่ารักที่สุด 🌸 ᴘᴜɴʏᴜʀᴜ ᴛᴀᴋᴀɴᴀꜱʜɪ 🌸",
+            "{NF6(【 14 / 17 】)} | 🌸 ʀʏᴜᴜᴋᴏ ᴍᴀᴛᴏɪ 🌸",
+            "{NF6(【 15 / 17 】)} | 🌸 ᴛᴀᴛꜱᴜᴍᴀᴋɪ 🌸",
+            "{NF6(【 16 / 17 】)} | 🌸 ᴍɪɪᴀ 🌸",
+            "{NF6(【 17 / 17 】)} | 🌸 ᴍᴀɪ ꜱᴀᴋᴜʀᴀᴊɪᴍᴀ 🌸"
         ],
         "bigimg": [
             "https://i.ibb.co/M5tzMM3/waifu-anime.gif",
@@ -54,77 +59,81 @@
             "https://i.ibb.co/cQsgcD3/dad43bfa09470e523042a46c2550b5b7.gif",
             "https://i.ibb.co/dK3dVc1/22ff51592aeeff578e5cfd33bf832464.gif",
             "https://i.ibb.co/vQDNchx/giphy-3130851631.gif",
-            "https://i.ibb.co/TDQqJhD/tumblr-p47bj0z1-At1uwii4ro8-540-3019061142.gif"
+            "https://i.ibb.co/TDQqJhD/tumblr-p47bj0z1-At1uwii4ro8-540-3019061142.gif",
+            "https://i.ibb.co/Gx4fXcR/0084abdb32ca69dc37183e78a7ba4b50-3927301812.gif",
+            "https://i.ibb.co/dBQJvrQ/bd32bf9686665d93ea0d5f3fc5a26874-3827126773.gif",
+            "https://i.ibb.co/sRs8VwN/996632993119b91634d2c192a58ac402-2361186821.gif",
+            "https://i.ibb.co/QkpSc4r/26c8c8d2ee3f87a643615121c538daa9-4007108255.gif"
         ],
         "smallimg": [],
         "button-1": [
             {
                 "name": "M",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MI",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIY",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYA",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYAK",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYAKO",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYAKO ",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYAKO V",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "MIYAKO V1",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "O",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OW",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN BY 4",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN BY 4l",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN BY 4le",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN BY 4lev",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             },
             {
                 "name": "OWN BY 4levy",
-                "url": "https://discord.gg/aqt6thEVV7"
+                "url": "https://discord.gg/jmmrQcwYP3"
             }
         ],
         "button-2": [
