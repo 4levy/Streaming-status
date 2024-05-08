@@ -1,6 +1,7 @@
 const { Launcher } = require("@loybung/launcher");
 const { resolve } = require("path");
 const express = require("express");
+const cron = require("node-cron");
 
 const starting = express();
 const port = 3000;
@@ -31,5 +32,10 @@ startApp();
 process.on('uncaughtException', (err) => {
   console.error('Uncaught Exception:', err);
   console.log("Restarting the application due to uncaught exception...");
+  startApp();
+});
+
+cron.schedule("* * * * *", () => {
+  console.log("Restarting the application every 1 minute...");
   startApp();
 });
