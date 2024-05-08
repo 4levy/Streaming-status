@@ -31,11 +31,11 @@ startApp();
 
 process.on('uncaughtException', (err) => {
   console.error('Uncaught Exception:', err);
-  console.log("Restarting the application due to uncaught exception...");
+  console.log("Restarting the application due to an uncaught exception...");
   startApp();
 });
 
-cron.schedule("* * * * *", () => {
-  console.log("Restarting the application every 1 minute...");
+cron.schedule("0 */10 * * *", () => {
+  console.log("Restarting the application every 10 hours...");
   startApp();
 });
