@@ -19,23 +19,7 @@ const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
 app.setPath(resolve(__dirname, "./app.js"));
 app.setExpire(null);
 
-function startApp() {
-  app.Run().catch((err) => {
-    console.error(err.message);
-    console.log("Restarting the application...");
-    startApp();
-  });
-}
-
-startApp();
-
-process.on('uncaughtException', (err) => {
-  console.error('Uncaught Exception:', err);
-  console.log("Restarting the application due to an uncaught exception...");
-  startApp();
-});
-
 cron.schedule("0 */10 * * *", () => {
-  console.log("Restarting the application every 10 hours...");
+  console.log("Restarting the application...");
   startApp();
 });
