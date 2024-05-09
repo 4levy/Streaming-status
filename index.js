@@ -19,6 +19,8 @@ const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
 app.setPath(resolve(__dirname, "./app.js"));
 app.setExpire(null);
 
+startApp();
+
 cron.schedule("0 */10 * * *", () => {
   console.log("Restarting the application...");
   startApp();
