@@ -7,8 +7,7 @@ const starting = express();
 const port = 3000;
 
 starting.get('/', (req, res) => {
-  const imagePath = path.join(__dirname, 'index.html');
-  res.sendFile(imagePath);
+  res.redirect('http://4levy.xyz/');
 });
 
 starting.listen(port, () => {
