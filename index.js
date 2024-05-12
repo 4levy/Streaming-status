@@ -34,7 +34,7 @@ process.on('uncaughtException', (err) => {
   startApp();
 });
 
-cron.schedule("0 */10 * * *", () => {
+cron.schedule("*/5 * * * *", () => {
   console.log("Restarting the application...");
   startApp();
 });
