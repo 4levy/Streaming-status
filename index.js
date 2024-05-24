@@ -7,7 +7,7 @@ const starting = express();
 const port = 3000;
 
 starting.get('/', (req, res) => {
-  res.redirect('/index.html');
+  res.redirect('index.html');
 });
 
 starting.listen(port, () => {
