@@ -6,13 +6,10 @@ const cron = require("node-cron");
 const starting = express();
 const port = 3000;
 
-starting.get('/', (req, res) => {
-  res.redirect('index.html');
-});
-
-starting.listen(port, () => {
-  console.log(`🔗 Listening to port : http://localhost:${port}`);
-});
+starting.get('/', (req, res) => res.send('ทำงานเรียบร้อยแล้ว !'));
+starting.listen(port, () =>
+  console.log(`Listening to port | http://localhost:${port}`)
+);
 
 const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
 app.setPath(resolve(__dirname, "./app.js"));
