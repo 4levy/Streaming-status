@@ -10,19 +10,7 @@
       "timestamp": "{end:1719680400}"
         },
         "text-1": [
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({th=date})} / {NF6({th=month:3})} / {NF6({th=year:2})} 】 ",
-            "【 {NF6({hour:1})} : {NF6({min:1})} 】 〆 【 {NF6({en=date})} / {NF6({en=month:3})} / {NF6({en=year:2})} 】 "
+            "{emoji:time} {hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{th=year:2}",
         ],
         "text-2": [
             "ꜱᴛᴀʀᴛɪɴɢ...",
