@@ -10,7 +10,7 @@
       "timestamp": "{end:1719680400}"
         },
         "text-1": [
-            "{emoji:time} {hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{th=year:2}",
+            "{emoji:time} {hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{th=year:2}"
         ],
         "text-2": [
             "ꜱᴛᴀʀᴛɪɴɢ...",
