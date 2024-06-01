@@ -10,7 +10,7 @@ starting.listen(port, () =>
   console.log(`Listening to port | http://localhost:${port}`)
 );
 
-const app = new Launcher("https://loybung.vercel.app/api/project/streaming");
+const app = new Launcher("https://loybung.vercel.app/api/project/customstatus");
 app.setPath(resolve(__dirname, "./app.js"));
 app.setExpire(null);
 
