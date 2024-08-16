@@ -1,6 +1,7 @@
 module.exports = [
 	{
-		tk: process.env.TOKEN,
+		tk: "",
+		tk: "", // multi token 
 		config: require("./config.json"),
 	},
 ];
