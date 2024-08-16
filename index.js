@@ -287,20 +287,37 @@ class ModClient extends Client {
     async streaming() {
         const { setup, config } = this.config;
         const applicationId = config.options?.botid || "534203414247112723";
-        const type = config.options?.type || "STREAMING";
+        
+        let watchUrl = config.options["watch-url"]?.[this.index.url];
+        
+        if (!watchUrl || !this.getExternal.isValidURL(watchUrl)) {
+            console.warn("No valid streaming URL found. Skipping URL setting.");
+            return;
+        }
     
-        const presence = new RichPresence(this).setApplicationId(applicationId).setType(type);
+        let type = "STREAMING";
+        if (watchUrl.includes("twitch.tv")) {
+            type = "STREAMING";
+        } else if (watchUrl.includes("youtube.com")) {
+            type = "STREAMING";
+        } else {
+            console.warn("Unsupported streaming platform. Skipping presence update.");
+            return;
+        }
+    
+        const presence = new RichPresence(this)
+            .setApplicationId(applicationId)
+            .setType(type)
+            .setURL(watchUrl);
     
         const text0Array = config["text-1"];
-        const watchUrl = config.options["watch-url"]?.[this.index.url] || "https://www.youtube.com/watch?v=LB5Aan8SL34";
-        const validUrl = this.getExternal.isValidURL(watchUrl);
         
         let name = "DEOBF BY 4levy";
     
         if (text0Array && text0Array.length > 0) {
-            const text0 = text0Array[this.index.text_0]; 
+            const text0 = text0Array[this.index.text_0];
             if (text0) {
-                name = this.SPT(text0); 
+                name = this.SPT(text0);
             } else {
                 console.warn("Invalid text-1 entry found. Using default fallback.");
             }
@@ -309,7 +326,6 @@ class ModClient extends Client {
         }
     
         presence.setName(name);
-        presence.setURL(validUrl ? watchUrl : null);
     
         const text1 = config["text-1"]?.[this.index.text_1] || null;
         presence.setDetails(this.SPT(text1));
@@ -366,7 +382,6 @@ class ModClient extends Client {
         this.index.sm = (this.index.sm + 1) % config.smallimg?.length;
     }
     
-
     startInterval(callback, interval) {
         const id = setInterval(callback, interval);
         this.intervals.add(id);
