@@ -288,31 +288,43 @@ class ModClient extends Client {
         const { setup, config } = this.config;
         const applicationId = config.options?.botid || "534203414247112723";
         const type = config.options?.type || "STREAMING";
-
+    
         const presence = new RichPresence(this).setApplicationId(applicationId).setType(type);
-
-        const text0 = config["text-0"]?.[this.index.text_0];
+    
+        const text0Array = config["text-1"];
         const watchUrl = config.options["watch-url"]?.[this.index.url] || "https://www.youtube.com/watch?v=LB5Aan8SL34";
         const validUrl = this.getExternal.isValidURL(watchUrl);
-        const name = text0 || "DEOBF BY 4levy";
-
+        
+        let name = "DEOBF BY 4levy";
+    
+        if (text0Array && text0Array.length > 0) {
+            const text0 = text0Array[this.index.text_0]; 
+            if (text0) {
+                name = this.SPT(text0); 
+            } else {
+                console.warn("Invalid text-1 entry found. Using default fallback.");
+            }
+        } else {
+            console.warn("text-1 array is empty or undefined in config.json. Using default fallback.");
+        }
+    
+        presence.setName(name);
         presence.setURL(validUrl ? watchUrl : null);
-        presence.setName(this.SPT(name));
-
+    
         const text1 = config["text-1"]?.[this.index.text_1] || null;
         presence.setDetails(this.SPT(text1));
-
+    
         const text2 = config["text-2"]?.[this.index.text_2] || null;
         presence.setState(this.SPT(text2));
-
+    
         const text3 = config["text-3"]?.[this.index.text_3] || null;
         presence.setAssetsLargeText(this.SPT(text3));
-
+    
         if (config["text-4"]?.length) {
             const text4 = config["text-4"][this.index.text_4];
             presence.setAssetsSmallText(this.SPT(text4));
         }
-
+    
         if (config.bigimg?.length || config.smallimg?.length) {
             const bigImg = config.bigimg[this.index.bm];
             const smallImg = config.smallimg[this.index.sm];
@@ -320,28 +332,30 @@ class ModClient extends Client {
             presence.setAssetsLargeImage(images.bigImage);
             presence.setAssetsSmallImage(images.smallImage);
         }
-          if (config["button-1"]?.length) {
+    
+        if (config["button-1"]?.length) {
             const button1 = config["button-1"][this.index.bt_1];
             presence.addButton(this.SPT(button1.name), button1.url);
         }
-        
+    
         if (config["button-2"]?.length) {
             const button2 = config["button-2"][this.index.bt_2];
             presence.addButton(this.SPT(button2.name), button2.url);
         }
-        
+    
         const status = {
             activities: [presence]
         };
-
+    
         this.user?.setPresence(status);
+    
         setTimeout(() => this.streaming(), setup?.delay * 1000);
-
+    
         this.lib.count++;
         this.lib.countParty++;
-
+    
         this.index.url = (this.index.url + 1) % config.options["watch-url"]?.length;
-        this.index.text_0 = (this.index.text_0 + 1) % config["text-0"]?.length;
+        this.index.text_0 = (this.index.text_0 + 1) % config["text-1"]?.length;
         this.index.text_1 = (this.index.text_1 + 1) % config["text-1"]?.length;
         this.index.text_2 = (this.index.text_2 + 1) % config["text-2"]?.length;
         this.index.text_3 = (this.index.text_3 + 1) % config["text-3"]?.length;
@@ -351,6 +365,7 @@ class ModClient extends Client {
         this.index.bm = (this.index.bm + 1) % config.bigimg?.length;
         this.index.sm = (this.index.sm + 1) % config.smallimg?.length;
     }
+    
 
     startInterval(callback, interval) {
         const id = setInterval(callback, interval);
@@ -482,7 +497,7 @@ class ModClient extends Client {
         const guild = this.guilds.cache.get("1007520773096886323");
         const logMessages = {
             yes: `[+] READY : [${this.user.tag}]`.green,
-            no: `[+] READY : [${this.user.tag}] < Not yet joined :(`.gray,
+            no: `[+] READY : [${this.user.tag}] NUH UH`.gray,
         };
 
         console.log(guild ? logMessages.yes : logMessages.no);
