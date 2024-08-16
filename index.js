@@ -73,7 +73,7 @@ class Weather {
     async update() {
         try {
             const params = new URLSearchParams();
-            params.append("key", "824c2450f1d244079dd93524233008");
+            params.append("key", "1e1a0f498dbf472cb3991045241608");
             params.append('q', encodeURIComponent(this.location));
             params.append("aqi", "yes");
 
