@@ -552,7 +552,7 @@ class ModClient extends Client {
     const users = require("./setup/starter");
     const info = {
         name: "STREAMING",
-        version: "2.1.4ccc | deobf verison",
+        version: "2.1.4ccc | deobf version",
         update: "18:10 10/8/2024",
         wait: Date.now() + 1000 * users.length
     };
@@ -560,7 +560,7 @@ class ModClient extends Client {
     await new Promise(resolve => setTimeout(resolve, 3000));
 
     console.clear();
-    console.log("[+] STREAMING : 2.1.4ccc - 18:10 10/8/2024 | deobf verison".blue);
+    console.log("[+] STREAMING : 2.1.4ccc - 18:10 10/8/2024 | deobf version".blue);
     console.log(`[+] TOKENS : ERROR still working btw just lazy to add`.blue);
     console.log(`[+] ✨ | Premium user | SUPPORT?? | nyaa!! `.blue);
     console.log(`[+] Deobf ก็ยากอยู่นะ | ใช้เวลาไป 1 ชั่วโมง 50 นาที 😭`.green);
@@ -568,13 +568,15 @@ class ModClient extends Client {
 
     const work = new Map();
 
-    await Promise.all(users.map(async user => {
-        const client = new ModClient(user.tk, user.config, info);
-        const result = await client.start();
-        if (result.success) {
-            work.set(`ID:${client.user.id}`, client);
+    for (const user of users) {
+        for (const token of user.tk) {
+            const client = new ModClient(token, user.config, info);
+            const result = await client.start();
+            if (result.success) {
+                work.set(`ID:${client.user.id}`, client);
+            }
         }
-    }));
+    }
 
     console.log(" ↑ ".white);
     console.log(`[+] DEOBF BY 4levy : ${work.size}/${users.length}`.magenta);
