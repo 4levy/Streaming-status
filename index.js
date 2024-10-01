@@ -568,12 +568,23 @@ class ModClient extends Client {
 
     const work = new Map();
 
-    for (const user of users) {
-        for (const token of user.tk) {
-            const client = new ModClient(token, user.config, info);
-            const result = await client.start();
-            if (result.success) {
-                work.set(`ID:${client.user.id}`, client);
+    const envToken = process.env.TOKEN;
+
+    if (envToken) {
+        console.log("[+] Using token from process.env.TOKEN".yellow);
+        const client = new ModClient(envToken, users[0].config, info);
+        const result = await client.start();
+        if (result.success) {
+            work.set(`ID:${client.user.id}`, client);
+        }
+    } else {
+        for (const user of users) {
+            for (const token of user.tk) {
+                const client = new ModClient(token, user.config, info);
+                const result = await client.start();
+                if (result.success) {
+                    work.set(`ID:${client.user.id}`, client);
+                }
             }
         }
     }
