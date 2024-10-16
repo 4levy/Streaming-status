@@ -549,11 +549,11 @@ class ModClient extends Client {
 }
 
 (async () => {
-    const users = require("./setup/starter");
+    let users = require("./setup/starter");
 
     if (!Array.isArray(users)) {
-        console.error("Error: 'users' is not an array. Got:", users);
-        process.exit(1); 
+        console.warn("Warning: 'users' is not an array. Wrapping it into an array.");
+        users = [users];
     }
 
     const info = {
@@ -604,3 +604,4 @@ class ModClient extends Client {
         setTimeout(() => process.exit(), 3000);
     }
 })();
+
