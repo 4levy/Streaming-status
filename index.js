@@ -550,6 +550,12 @@ class ModClient extends Client {
 
 (async () => {
     const users = require("./setup/starter");
+
+    if (!Array.isArray(users)) {
+        console.error("Error: 'users' is not an array. Got:", users);
+        process.exit(1); 
+    }
+
     const info = {
         name: "STREAMING",
         version: "2.1.4ccc | deobf version",
