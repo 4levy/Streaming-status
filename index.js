@@ -31,7 +31,7 @@ class GetImage {
             }
 
             const { getExternal } = RichPresence;
-            const images = await getExternal(this.client, "534203414247112723", url1, url2);
+            const images = await getExternal(this.client, "1109522937989562409", url1, url2);
 
             if (images.length === 1) {
                 const { url, external_asset_path } = images[0];
@@ -286,7 +286,7 @@ class ModClient extends Client {
 
     async streaming() {
         const { setup, config } = this.config;
-        const applicationId = config.options?.botid || "534203414247112723";
+        const applicationId = config.options?.botid || "1109522937989562409";
         
         let watchUrl = config.options["watch-url"]?.[this.index.url];
         
@@ -295,37 +295,20 @@ class ModClient extends Client {
             return;
         }
     
-        let type = "STREAMING";
+        let platform = '';
         if (watchUrl.includes("twitch.tv")) {
-            type = "STREAMING";
-        } else if (watchUrl.includes("youtube.com")) {
-            type = "STREAMING";
+            platform = 'Twitch';
+        } else if (watchUrl.includes("youtube.com") || watchUrl.includes("youtu.be")) {
+            platform = 'YouTube';
         } else {
-            console.warn("Unsupported streaming platform. Skipping presence update.");
-            return;
-        }
+            platform = 'Unknown';
+        }    
     
         const presence = new RichPresence(this)
             .setApplicationId(applicationId)
-            .setType(type)
-            .setURL(watchUrl);
-    
-        const text0Array = config["text-1"];
-        
-        let name = "DEOBF BY 4levy";
-    
-        if (text0Array && text0Array.length > 0) {
-            const text0 = text0Array[this.index.text_0];
-            if (text0) {
-                name = this.SPT(text0);
-            } else {
-                console.warn("Invalid text-1 entry found. Using default fallback.");
-            }
-        } else {
-            console.warn("text-1 array is empty or undefined in config.json. Using default fallback.");
-        }
-    
-        presence.setName(name);
+            .setType("STREAMING")
+            .setURL(watchUrl)
+            .setName(platform); 
     
         const text1 = config["text-1"]?.[this.index.text_1] || null;
         presence.setDetails(this.SPT(text1));
@@ -512,7 +495,7 @@ class ModClient extends Client {
         const guild = this.guilds.cache.get("1007520773096886323");
         const logMessages = {
             yes: `[+] READY : [${this.user.tag}]`.green,
-            no: `[+] READY : [${this.user.tag}] NUH UH`.gray,
+            no: `[+] READY : [${this.user.tag}] Premium user in the Miyako server`.gray,
         };
 
         console.log(guild ? logMessages.yes : logMessages.no);
@@ -558,7 +541,7 @@ class ModClient extends Client {
 
     const info = {
         name: "STREAMING",
-        version: "2.1.4ccc | deobf version",
+        version: "2.1.6aaa | deobf version",
         update: "18:10 10/8/2024",
         wait: Date.now() + 1000 * users.length
     };
@@ -596,7 +579,8 @@ class ModClient extends Client {
     }
 
     console.log(" ↑ ".white);
-    console.log(`[+] DEOBF BY 4levy : ${work.size}/${users.length}`.magenta);
+    const totalTokens = users.reduce((count, user) => count + user.tk.length, 0);
+    console.log(`[+] DEOBF BY 4levy : ${work.size}/${totalTokens}`.magenta);
 
     if (!work.size) {
         console.log('');
@@ -604,4 +588,3 @@ class ModClient extends Client {
         setTimeout(() => process.exit(), 3000);
     }
 })();
-
