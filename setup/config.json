@@ -3,18 +3,21 @@
         "city": "pattay",
         "delay": 10
     },
-  "config": {
-    "options": {
-      "watch-url": ["https://www.twitch.tv/4levy_z1"],
-      "timestamp": "{end:1719680400}"
+    "config": {
+        "options": {
+            "watch-url": [
+                "https://www.twitch.tv/4levy_z1", 
+                "https://www.youtube.com/watch?v=HuFZX0LB29g"
+            ],
+            "timestamp": "{end:1719680400}"
         },
         "text-1": [
-            "{emoji:time} {hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{th=year:2} | Deobf by 4levy"
+            "{emoji:time} {hour:1}:{min:1} ⌯ {th=date}/{th=month:1}/{th=year:2} | ReadAble Verison By 4levy"
         ],
         "text-2": [
             "Feixiao Loading..",
             "| 🌺 ╺ ⠀Feixiao ྀི𓈒",
-            "| 🌺 ╺ ⠀Feixiao ྀི𓈒",
+            "| 🌺 ╺ ⠀Feixiao ྀི𓈒" ,
             "Sparkle Loading..",
             "| 🩸 ╺  Sparkle ྀི𓈒 ♡",
             "| 🩸⠀╺  Sparkle ྀི𓈒 ♡",
@@ -32,7 +35,7 @@
             "| 🖤 ╺  Saber ྀི𓈒",
             "| 🖤 ╺  Saber ྀི𓈒",
             "| 🖤 ╺  Saber ྀི𓈒"
-          ],
+        ],
         "text-3": [
             ""
         ],
@@ -104,5 +107,4 @@
             }
         ]
     }
-  }
-  
+}
