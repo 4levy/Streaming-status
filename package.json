@@ -1,20 +1,9 @@
 {
-	"name": "launcher_streaming",
-	"version": "1.0.0",
-	"main": "index.js",
-	"scripts": {
-		"build": "npm install",
-		"start": "node ."
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": "streaming",
-	"dependencies": {
-		"@loybung/launcher": "^7.0.16",
-		"colors": "^1.4.0",
-		"discord.js-selfbot-v13": "^3.3.0",
-		"moment-timezone": "^0.5.45",
-		"node-cron": "^3.0.3"
-	}
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js-selfbot-v13": "^3.5.1",
+    "moment-timezone": "^0.5.46",
+    "node-cron": "^3.0.3",
+    "os": "^0.1.2"
+  }
 }
