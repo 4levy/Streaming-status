@@ -1,6 +1,8 @@
 
 Please ```npm install``` first before running the script
 
+Supported [Render](https://github.com/4levy/Streaming-status-render)
+
 <hr>
 <p align="center">
   <a href="https://star-history.com/#4levy/Streaming-status&Tips-Discord/Cwelium&Date&theme=dark">
