@@ -1,4 +1,4 @@
-// เอาไปแจกต่อให้เครดิตด้วย | Deobf by 4levy ใครเปลี่ยนขอให้ไม่เจอดี
+// เอาไปแจกต่อให้เครดิตด้วย | By 4levy ใครเปลี่ยนขอให้ไม่เจอดี
 
 const { Client, RichPresence, Options } = require("discord.js-selfbot-v13");
 const moment = require("moment-timezone");
@@ -64,6 +64,19 @@ class GetImage {
 class Weather {
     constructor(location) {
         this.location = location;
+        this.feelslike_c = 0;
+        this.feelslike_f = 0;
+        this.windchill_c = 0;
+        this.windchill_f = 0;
+        this.heatindex_c = 0;
+        this.heatindex_f = 0;
+        this.dewpoint_c = 0;
+        this.dewpoint_f = 0;
+        this.co = 0;
+        this.no2 = 0;
+        this.o3 = 0;
+        this.so2 = 0;
+        this.pm10 = 0;
         this.stop = 0;
         schedule("*/5 * * * *", () => this.update());
     }
@@ -100,6 +113,19 @@ class Weather {
             this.cloud = data.current.cloud;
             this.uv = data.current.uv;
             this.pm2_5 = data.current.air_quality.pm2_5;
+            this.feelslike_c = data.current.feelslike_c;
+            this.feelslike_f = data.current.feelslike_f;
+            this.windchill_c = data.current.windchill_c;
+            this.windchill_f = data.current.windchill_f;
+            this.heatindex_c = data.current.heatindex_c;
+            this.heatindex_f = data.current.heatindex_f;
+            this.dewpoint_c = data.current.dewpoint_c;
+            this.dewpoint_f = data.current.dewpoint_f;
+            this.co = data.current.air_quality.co;
+            this.no2 = data.current.air_quality.no2;
+            this.o3 = data.current.air_quality.o3;
+            this.so2 = data.current.air_quality.so2;
+            this.pm10 = data.current.air_quality.pm10;
         } catch {
             if (this.stop > 10) {
                 return;
@@ -357,14 +383,14 @@ class ModClient extends Client {
     async streaming() {
         const { setup, config } = this.config;
         const applicationId = config.options?.botid || "1109522937989562409";
-        
+
         let watchUrl = config.options["watch-url"]?.[this.index.url];
-        
+
         if (!watchUrl || !this.getExternal.isValidURL(watchUrl)) {
             console.warn("No valid streaming URL found. Skipping URL setting.");
             return;
         }
-    
+
         let platform = '';
         if (watchUrl.includes("twitch.tv")) {
             platform = 'Twitch';
@@ -372,28 +398,28 @@ class ModClient extends Client {
             platform = 'YouTube';
         } else {
             platform = 'Unknown';
-        }    
-    
+        }
+
         const presence = new RichPresence(this)
             .setApplicationId(applicationId)
             .setType("STREAMING")
             .setURL(watchUrl)
-            .setName(platform); 
-    
+            .setName(platform);
+
         const text1 = config["text-1"]?.[this.index.text_1] || null;
         presence.setDetails(this.SPT(text1));
-    
+
         const text2 = config["text-2"]?.[this.index.text_2] || null;
         presence.setState(this.SPT(text2));
-    
+
         const text3 = config["text-3"]?.[this.index.text_3] || null;
         presence.setAssetsLargeText(this.SPT(text3));
-    
+
         if (config["text-4"]?.length) {
             const text4 = config["text-4"][this.index.text_4];
             presence.setAssetsSmallText(this.SPT(text4));
         }
-    
+
         if (config.bigimg?.length || config.smallimg?.length) {
             const bigImg = config.bigimg[this.index.bm];
             const smallImg = config.smallimg[this.index.sm];
@@ -401,28 +427,28 @@ class ModClient extends Client {
             presence.setAssetsLargeImage(images.bigImage);
             presence.setAssetsSmallImage(images.smallImage);
         }
-    
+
         if (config["button-1"]?.length) {
             const button1 = config["button-1"][this.index.bt_1];
             presence.addButton(this.SPT(button1.name), button1.url);
         }
-    
+
         if (config["button-2"]?.length) {
             const button2 = config["button-2"][this.index.bt_2];
             presence.addButton(this.SPT(button2.name), button2.url);
         }
-    
+
         const status = {
             activities: [presence]
         };
-    
+
         this.user?.setPresence(status);
-    
+
         setTimeout(() => this.streaming(), setup?.delay * 1000);
-    
+
         this.lib.count++;
         this.lib.countParty++;
-    
+
         this.index.url = (this.index.url + 1) % config.options["watch-url"]?.length;
         this.index.text_0 = (this.index.text_0 + 1) % config["text-1"]?.length;
         this.index.text_1 = (this.index.text_1 + 1) % config["text-1"]?.length;
@@ -434,7 +460,7 @@ class ModClient extends Client {
         this.index.bm = (this.index.bm + 1) % config.bigimg?.length;
         this.index.sm = (this.index.sm + 1) % config.smallimg?.length;
     }
-    
+
     startInterval(callback, interval) {
         const id = setInterval(callback, interval);
         this.intervals.add(id);
@@ -487,84 +513,126 @@ class ModClient extends Client {
         });
     }
 
-SPT(text) {
-    if (!text) return text || null;
+    SPT(text) {
+        if (!text) return text || null;
+    
+        const { weather, sys, emoji, textFont, lib } = this;
+        const currentMoment = moment().locale('th').tz(weather.timezone);
+    
+        const variables = {
+            // Time
+            'hour:1': currentMoment.format('HH'),
+            'hour:2': currentMoment.format('hh'),
+            'min:1': currentMoment.format('mm'),
+            'min:2': currentMoment.format('mm A'),
+    
+            // Thai Date
+            'th=date': currentMoment.format('D'),
+            'th=week:1': currentMoment.format('ddd'),
+            'th=week:2': currentMoment.format('dddd'),
+            'th=month:1': currentMoment.format('M'),
+            'th=month:2': currentMoment.format('MMM'),
+            'th=month:3': currentMoment.format('MMMM'),
+            'th=year:1': (parseInt(currentMoment.format('YYYY')) + 543).toString().slice(-2),
+            'th=year:2': (parseInt(currentMoment.format('YYYY')) + 543).toString(),
+    
+            // English Date
+            'en=date': currentMoment.locale('en').format('Do'),
+            'en=week:1': currentMoment.locale('en').format('ddd'),
+            'en=week:2': currentMoment.locale('en').format('dddd'),
+            'en=month:1': currentMoment.locale('en').format('M'),
+            'en=month:2': currentMoment.locale('en').format('MMM'),
+            'en=month:3': currentMoment.locale('en').format('MMMM'),
+            'en=year:1': currentMoment.locale('en').format('YY'),
+            'en=year:2': currentMoment.locale('en').format('YYYY'),
+    
+            // Weather
+            'city': weather.city,
+            'region': weather.region,
+            'country': weather.country,
+            'temp:c': weather.temp_c,
+            'temp:f': weather.temp_f,
+            'wind:kph': weather.wind_kph,
+            'wind:mph': weather.wind_mph,
+            'wind:degree': weather.wind_degree,
+            'wind:dir': weather.wind_dir,
+            'pressure:mb': weather.pressure_mb,
+            'pressure:in': weather.pressure_in,
+            'precip:mm': weather.precip_mm,
+            'precip:in': weather.precip_in,
+            'gust:kph': weather.gust_kph,
+            'gust:mph': weather.gust_mph,
+            'feelslike:c': weather.feelslike_c,
+            'feelslike:f': weather.feelslike_f,
+            'windchill:c': weather.windchill_c,
+            'windchill:f': weather.windchill_f,
+            'heatindex:c': weather.heatindex_c,
+            'heatindex:f': weather.heatindex_f,
+            'dewpoint:c': weather.dewpoint_c,
+            'dewpoint:f': weather.dewpoint_f,
+            'vis:km': weather.vis_km,
+            'vis:mi': weather.vis_miles,
+            'humidity': weather.humidity,
+            'cloud': weather.cloud,
+            'uv': weather.uv,
+            'co': weather.co,
+            'no2': weather.no2,
+            'o3': weather.o3,
+            'so2': weather.so2,
+            'pm2.5': weather.pm2_5,
+            'pm10': weather.pm10,
+    
+            // System
+            'ping': Math.round(this.ws.ping),
+            'patch': lib.v.patch,
+            'cpu:name': sys.cpuname,
+            'cpu:cores': sys.cpucores,
+            'cpu:speed': sys.cpuspeed,
+            'cpu:usage': sys.cpu,
+            'ram:usage': sys.ram,
+            'uptime:days': Math.trunc(this.uptime / 86400000),
+            'uptime:hours': Math.trunc(this.uptime / 3600000 % 24),
+            'uptime:minutes': Math.trunc(this.uptime / 60000 % 60),
+            'uptime:seconds': Math.trunc(this.uptime / 1000 % 60),
+    
+            // User
+            'user:name': this.user?.username,
+            'user:icon': this.user?.displayAvatarURL(),
+            'user:banner': this.user?.bannerURL(),
+            'guild=members': (guildId) => this.guilds.cache.get(guildId)?.memberCount,
+            'guild=name': (guildId) => this.guilds.cache.get(guildId)?.name,
+            'guild=icon': (guildId) => this.guilds.cache.get(guildId)?.iconURL(),
+    
+            'emoji:random': () => emoji.random(),
+            'emoji:time': emoji.getTime(currentMoment.format('HH')),
+            'emoji:clock': () => emoji.getClock(currentMoment.format('HH')),
+    
+            'random': (text) => {
+                const options = text.split(',').map(t => t.trim());
+                return options[Math.floor(Math.random() * options.length)];
+            }
+        };
 
-    const { weather, sys, emoji, textFont, lib } = this;
-    const currentMoment = moment().locale('en').tz(weather.timezone);
+        const processFont = (fontNum, content) => {
+            const processedContent = content.replace(/\{([^{}]+)\}/g, (_, key) => variables[key] || key);
+            return textFont[`getFont${fontNum}`]?.(processedContent) || processedContent;
+        };
 
-    const variables = {
-        'hour:1': currentMoment.format('HH'),
-        'hour:2': currentMoment.format('hh'),
-        'min:1': currentMoment.format('mm'),
-        'min:2': currentMoment.format('mm A'),
-        'th=date': currentMoment.format('DD'),
-        'th=month:1': currentMoment.format('MM'),
-        'th=year:2': currentMoment.format('YY'),
-        'en:date': currentMoment.format('dddd'),
-        'en=month:1': currentMoment.format('MMMM'),
-        'en=year:2': currentMoment.format('YYYY'),
-        'city': weather.city,
-        'region': weather.region,
-        'country': weather.country,
-        'temp:c': weather.temp_c,
-        'temp:f': weather.temp_f,
-        'wind:kph': weather.wind_kph,
-        'wind:mph': weather.wind_mph,
-        'wind:degree': weather.wind_degree,
-        'wind:dir': weather.wind_dir,
-        'pressure:mb': weather.pressure_mb,
-        'pressure:in': weather.pressure_in,
-        'precip:mm': weather.precip_mm,
-        'precip:in': weather.precip_in,
-        'gust:kph': weather.gust_kph,
-        'gust:mph': weather.gust_mph,
-        'vis:km': weather.vis_km,
-        'vis:mi': weather.vis_mi,
-        'humidity': weather.humidity,
-        'cloud': weather.cloud,
-        'uv': weather.uv,
-        'pm2.5': weather.pm2_5,
-        'ping': Math.round(this.ws.ping),
-        'patch': lib.v.patch,
-        'cpu:name': sys.cpuname,
-        'cpu:cores': sys.cpucores,
-        'cpu:speed': sys.cpuspeed,
-        'cpu:usage': sys.cpu,
-        'ram:usage': sys.ram,
-        'uptime:days': Math.trunc(this.uptime / 86400000),
-        'uptime:hours': Math.trunc(this.uptime / 3600000 % 24),
-        'uptime:minutes': Math.trunc(this.uptime / 60000 % 60),
-        'uptime:seconds': Math.trunc(this.uptime / 1000 % 60),
-        'count++': lib.count,
-        'user:name': this.user?.username,
-        'user:icon': this.user?.displayAvatarURL(),
-        'user:banner': this.user?.bannerURL(),
-        'emoji:random': emoji.random(),
-        'emoji:time': emoji.getTime(currentMoment.format('HH')),
-        'emoji:clock': emoji.getClock(currentMoment.format('HH'))
-    };
+        const processText = (input) => {
+            return input.replace(/\{NF(\d)\((.*?)\)\}/g, (_, num, content) => {
+                return processFont(num, content);
+            }).replace(/\{([^{}]+)\}/g, (_, key) => variables[key] || key);
+        };
 
-    const processFont = (fontNum, content) => {
-        const processedContent = content.replace(/\{([^{}]+)\}/g, (_, key) => variables[key] || key);
-        return textFont[`getFont${fontNum}`]?.(processedContent) || processedContent;
-    };
+        let result = text;
+        let prev;
+        do {
+            prev = result;
+            result = processText(prev);
+        } while (result !== prev);
 
-    const processText = (input) => {
-        return input.replace(/\{NF(\d)\((.*?)\)\}/g, (_, num, content) => {
-            return processFont(num, content);
-        }).replace(/\{([^{}]+)\}/g, (_, key) => variables[key] || key);
-    };
-
-    let result = text;
-    let prev;
-    do {
-        prev = result;
-        result = processText(prev);
-    } while (result !== prev);
-
-    return result;
-}
+        return result;
+    }
     log() {
         const guild = this.guilds.cache.get("1007520773096886323");
         const logMessages = {
@@ -615,15 +683,15 @@ SPT(text) {
 
     const info = {
         name: "STREAMING",
-        version: "2.1.6aaa | deobf version",
-        update: "18:10 10/8/2024",
+        version: "2.1.555ccc",
+        update: "2025-02-2 7:59AM",
         wait: Date.now() + 1000 * users.length
     };
-
+    
     await new Promise(resolve => setTimeout(resolve, 3000));
-
+    
     console.clear();
-    console.log("[+] STREAMING : 2.1.4ccc - 18:10 10/8/2024 | deobf version".blue);
+    console.log(`[+] STREAMING : ${info.version} - ${info.update} | deobf version`.blue);
     console.log(`[+] TOKENS : ERROR still working btw just lazy to add`.blue);
     console.log(`[+] ✨ | Premium user | SUPPORT?? | nyaa!! `.blue);
     console.log(`[+] Deobf ก็ยากอยู่นะ | ใช้เวลาไป 1 ชั่วโมง 50 นาที 😭`.green);
